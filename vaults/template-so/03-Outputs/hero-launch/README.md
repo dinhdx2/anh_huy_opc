@@ -11,7 +11,10 @@
 | `compliance/` | `cong-ban-quyen-checklist.md` · `privacy-policy.md` | **CỔNG bản-quyền** (hero+order-bump PASS) + Privacy | ✅ (xem cờ luật ↓) |
 | `giao-hang/` | `giao-hang-kiem-soat-spec.md` | Cơ-chế giao Sheet chống copy lậu | ✅ spec |
 | `tai-chinh/` | `cac-breakeven.csv` + diễn-giải | Mô-hình CAC break-even 3 kịch-bản | ✅ Base ~153k · Bull ~190k · Bear ~140k/đơn |
-| `../02-Tasks/.../pheu-email-zalo.md` | — | Phễu thu email/Zalo + lead-magnet | ✅ spec |
+| `pheu-email-zalo.md` | — | **Spec phễu** thu email/Zalo (khung 5 chạm + viral loop) | ✅ spec |
+| `pheu/lead-magnet/` | Sheet 1 sàn + hướng-dẫn | **Lead-magnet FREE** (mồi phễu, thuế 1,5%) | ✅ công-thức khớp 100% |
+| `pheu/nurture/` | `chuoi-nuoi-email-zalo.md` | **Copy 5 chạm** email/Zalo (dùng-được) | ✅ 0 vi-phạm Luật QC |
+| `pheu/ads/` | ad-copy · video-script · creative-direction | **6 bộ ad copy** FB/TikTok + 3 kịch-bản video | ✅ 0 vi-phạm Luật QC |
 
 ## ⚠️ 3 điểm CEO/chuyên-gia cần lưu-ý (đã ghi rõ trong file, không giấu)
 1. **Thuế — 2 người-nộp khác nhau (đừng nhầm):**
