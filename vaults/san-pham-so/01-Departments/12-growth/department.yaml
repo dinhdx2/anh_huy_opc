@@ -1,0 +1,23 @@
+code: 12-growth
+name_vn: Tăng trưởng & Đầu tư
+tier: 5
+description: Phòng Tăng trưởng & Đầu tư — GĐ1 giữ kỷ-luật optimize-before-scale cho ĐơnThật (validate hero kit qua cổng contribution-margin/đơn rồi mới scale ads; xây growth loop từ moat email/Zalo OA → mua lặp → referral cộng-đồng nhà bán). Tự-vốn (bootstrapped) là mặc-định GĐ1, KHÔNG gọi vốn sớm.
+agents:
+- growth-strategist
+- fundraising-lead
+default_speaker: growth-strategist
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Tăng trưởng
+- Tăng trưởng
+- Growth
+- Scale
+- Growth loop
+- Gọi vốn
+- Đầu tư
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: tang-truong
+maps_to: K1

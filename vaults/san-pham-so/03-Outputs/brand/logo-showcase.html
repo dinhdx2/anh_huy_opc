@@ -1,0 +1,350 @@
+<title>ĐơnThật — Đề xuất logo</title>
+<style>
+  :root{
+    --paper:#F6F7F3; --surface:#FFFFFF; --raise:#FBFCFA;
+    --ink:#12201B; --muted:#5C6B63; --line:#E4E9E2;
+    --pine:#0E8E63; --pine-deep:#0A6B4B; --mint:#34D399; --amber:#F5A524;
+    --shadow:0 1px 2px rgba(16,32,27,.04),0 8px 24px rgba(16,32,27,.06);
+    --maxw:1080px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0C130F; --surface:#131C17; --raise:#17221B;
+      --ink:#EAF1EC; --muted:#94A79B; --line:#22302A;
+      --pine:#31B682; --pine-deep:#0E8E63; --mint:#5FE0AE; --amber:#F7B54A;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#F6F7F3; --surface:#FFFFFF; --raise:#FBFCFA;
+    --ink:#12201B; --muted:#5C6B63; --line:#E4E9E2;
+    --pine:#0E8E63; --pine-deep:#0A6B4B; --mint:#34D399; --amber:#F5A524;
+    --shadow:0 1px 2px rgba(16,32,27,.04),0 8px 24px rgba(16,32,27,.06);
+  }
+  :root[data-theme="dark"]{
+    --paper:#0C130F; --surface:#131C17; --raise:#17221B;
+    --ink:#EAF1EC; --muted:#94A79B; --line:#22302A;
+    --pine:#31B682; --pine-deep:#0E8E63; --mint:#5FE0AE; --amber:#F7B54A;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:clamp(20px,5vw,56px) clamp(18px,4vw,40px)}
+  .eyebrow{font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--pine); font-weight:700}
+  h1,h2,h3{margin:0; text-wrap:balance; line-height:1.15; letter-spacing:-.02em}
+  p{margin:0}
+  .muted{color:var(--muted)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative; overflow:hidden; border-radius:28px;
+    background:linear-gradient(135deg,var(--pine) 0%, var(--pine-deep) 100%);
+    color:#fff; padding:clamp(28px,5vw,52px);
+    display:grid; gap:26px;
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(120% 90% at 88% 8%, rgba(255,255,255,.16), transparent 60%);
+  }
+  .lockup{display:flex; align-items:center; gap:20px; flex-wrap:wrap; position:relative; z-index:1}
+  .lockup .mark{width:76px; height:76px; flex:none; filter:drop-shadow(0 6px 14px rgba(0,0,0,.18))}
+  .wordmark{font-weight:800; letter-spacing:-.035em; font-size:clamp(2.4rem,7vw,3.6rem); line-height:1}
+  .wordmark .b{color:#fff}
+  .wordmark .t{color:#D8FBEC}
+  .hero .tag{position:relative; z-index:1; max-width:46ch; font-size:clamp(1rem,2.4vw,1.15rem); color:#E7F7EF}
+  .hero .meta{position:relative; z-index:1; display:flex; gap:8px; flex-wrap:wrap; font-size:.8rem}
+  .chip{border:1px solid rgba(255,255,255,.28); border-radius:999px; padding:5px 12px; color:#fff; background:rgba(255,255,255,.08)}
+
+  /* ---------- SECTION ---------- */
+  section{margin-top:clamp(40px,7vw,72px)}
+  .head{display:grid; gap:8px; margin-bottom:26px; max-width:60ch}
+  .head h2{font-size:clamp(1.4rem,3.4vw,1.9rem)}
+  .head p{color:var(--muted)}
+
+  /* ---------- CONCEPT GRID ---------- */
+  .concepts{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px}
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:20px;
+    box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column;
+  }
+  .card .stage{
+    display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:1px solid var(--line);
+  }
+  .tile{aspect-ratio:1/1; display:grid; place-items:center; padding:26px}
+  .tile.light{background:var(--raise)}
+  .tile.dark{background:linear-gradient(135deg,var(--pine-deep),#063a29)}
+  .tile svg{width:100%; height:100%; max-width:104px}
+  .card .body{padding:18px 20px 22px; display:grid; gap:7px}
+  .rank{display:inline-flex; align-items:center; gap:7px; font-size:.72rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--pine)}
+  .dot{width:7px;height:7px;border-radius:999px;background:var(--amber)}
+  .card h3{font-size:1.12rem}
+  .card .why{color:var(--muted); font-size:.92rem}
+
+  /* ---------- WORDMARK LOCKUPS ---------- */
+  .locks{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+  .lockcard{background:var(--surface); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow); padding:30px; display:grid; gap:22px; place-items:center; text-align:center}
+  .lockcard .cap{font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+  .h-lock{display:flex; align-items:center; gap:14px}
+  .h-lock .mark{width:52px;height:52px;flex:none}
+  .h-lock .wm{font-weight:800; letter-spacing:-.035em; font-size:1.9rem; color:var(--ink)}
+  .h-lock .wm .t{color:var(--pine)}
+  .v-lock{display:grid; gap:12px; justify-items:center}
+  .v-lock .mark{width:60px;height:60px}
+  .v-lock .wm{font-weight:800; letter-spacing:-.02em; font-size:1.5rem; color:var(--ink)}
+  .v-lock .wm .t{color:var(--pine)}
+  .v-lock .sub{font-size:.62rem; letter-spacing:.34em; text-transform:uppercase; color:var(--muted)}
+
+  /* ---------- PALETTE ---------- */
+  .swatches{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px}
+  .sw{border:1px solid var(--line); border-radius:16px; overflow:hidden; background:var(--surface)}
+  .sw .cap{height:76px}
+  .sw .info{padding:11px 14px; display:grid; gap:2px}
+  .sw .nm{font-weight:650; font-size:.9rem}
+  .sw .hex{font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:.04em}
+  .sw .role{font-size:.74rem; color:var(--muted)}
+
+  /* ---------- SIZE / FAVICON ---------- */
+  .sizes{display:flex; align-items:flex-end; gap:26px; flex-wrap:wrap; background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:26px; box-shadow:var(--shadow)}
+  .size{display:grid; gap:10px; justify-items:center}
+  .size .lab{font-size:.72rem; color:var(--muted); font-family:ui-monospace,monospace}
+  .size svg{display:block}
+
+  /* ---------- NOTE ---------- */
+  .note{background:var(--raise); border:1px solid var(--line); border-left:3px solid var(--amber); border-radius:14px; padding:20px 22px; display:grid; gap:10px}
+  .note h3{font-size:1rem}
+  .note ul{margin:0; padding-left:18px; color:var(--muted); display:grid; gap:6px; font-size:.92rem}
+  .note strong{color:var(--ink); font-weight:650}
+
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); font-size:.82rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px}
+
+  @media (max-width:520px){
+    .sizes{gap:18px}
+  }
+</style>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="eyebrow" style="color:#CFF6E6">Đề xuất nhận diện · nháp 1</div>
+    <div class="lockup">
+      <svg class="mark" viewBox="0 0 96 96" aria-label="Biểu tượng ĐơnThật">
+        <defs><linearGradient id="hMark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EAFBF3"/><stop offset="1" stop-color="#BFF3DD"/></linearGradient></defs>
+        <rect x="10" y="10" width="76" height="76" rx="22" fill="#ffffff"/>
+        <path d="M27 50 L42 65 L71 29" fill="none" stroke="#0A6B4B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="71" cy="29" r="6" fill="#F5A524"/>
+      </svg>
+      <div class="wordmark"><span class="b">Đơn</span><span class="t">Thật</span></div>
+    </div>
+    <p class="tag">Lên đơn <em>thật</em> — kit &amp; khóa thực chiến cho nhà bán mới trên Shopee &amp; TikTok Shop.</p>
+    <div class="meta">
+      <span class="chip">Dấu tích = “thật / đã xác thực”</span>
+      <span class="chip">Chấm cam = “đơn mới về”</span>
+      <span class="chip">SVG gốc · bản quyền sạch</span>
+    </div>
+  </header>
+
+  <!-- CONCEPTS -->
+  <section>
+    <div class="head">
+      <div class="eyebrow">Ba hướng</div>
+      <h2>Chọn 1 hướng để tinh chỉnh</h2>
+      <p>Cùng một hệ ý tưởng (đơn + dấu tích + chấm “đơn mới”), khác nhau ở <em>vật mang</em>: thẻ, chữ, hay túi. Mỗi mark hiện trên nền sáng và nền xanh (bản đảo màu).</p>
+    </div>
+    <div class="concepts">
+
+      <!-- A -->
+      <article class="card">
+        <div class="stage">
+          <div class="tile light">
+            <svg viewBox="0 0 96 96" aria-label="Hướng A trên nền sáng">
+              <defs><linearGradient id="aL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs>
+              <rect x="10" y="10" width="76" height="76" rx="22" fill="url(#aL)"/>
+              <path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="71" cy="29" r="6" fill="#F5A524"/>
+            </svg>
+          </div>
+          <div class="tile dark">
+            <svg viewBox="0 0 96 96" aria-label="Hướng A đảo màu">
+              <rect x="10" y="10" width="76" height="76" rx="22" fill="#fff"/>
+              <path d="M27 50 L42 65 L71 29" fill="none" stroke="#0A6B4B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="71" cy="29" r="6" fill="#F5A524"/>
+            </svg>
+          </div>
+        </div>
+        <div class="body">
+          <span class="rank"><span class="dot"></span>Khuyến nghị</span>
+          <h3>A · Thẻ đơn ✓</h3>
+          <p class="why">Thẻ bo góc như app icon; dấu tích vươn lên đọc kép: “xác thực” và “đơn đi lên”. Sắc nét ở cỡ favicon 16px, hợp app/landing.</p>
+        </div>
+      </article>
+
+      <!-- B -->
+      <article class="card">
+        <div class="stage">
+          <div class="tile light">
+            <svg viewBox="0 0 96 96" aria-label="Hướng B trên nền sáng">
+              <g fill="none" stroke="#0E8E63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M30 20 V76"/>
+                <path d="M30 20 C58 20 76 33 76 48 C76 63 58 76 30 76"/>
+              </g>
+              <rect x="14" y="42" width="30" height="11" rx="5.5" fill="#0E8E63"/>
+              <path d="M46 50 L54 58 L66 42" fill="none" stroke="#0E8E63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="66" cy="42" r="5" fill="#F5A524"/>
+            </svg>
+          </div>
+          <div class="tile dark">
+            <svg viewBox="0 0 96 96" aria-label="Hướng B đảo màu">
+              <g fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M30 20 V76"/>
+                <path d="M30 20 C58 20 76 33 76 48 C76 63 58 76 30 76"/>
+              </g>
+              <rect x="14" y="42" width="30" height="11" rx="5.5" fill="#fff"/>
+              <path d="M46 50 L54 58 L66 42" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="66" cy="42" r="5" fill="#F5A524"/>
+            </svg>
+          </div>
+        </div>
+        <div class="body">
+          <span class="rank"><span class="dot"></span>Chữ ký</span>
+          <h3>B · Chữ lồng Đ</h3>
+          <p class="why">Lấy chữ “Đ” đặc trưng tiếng Việt làm chữ ký, dấu tích nằm trong lòng chữ. Rất “sở hữu được”, hợp con dấu / watermark.</p>
+        </div>
+      </article>
+
+      <!-- C -->
+      <article class="card">
+        <div class="stage">
+          <div class="tile light">
+            <svg viewBox="0 0 96 96" aria-label="Hướng C trên nền sáng">
+              <defs><linearGradient id="cL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs>
+              <path d="M35 39 V32 a13 13 0 0 1 26 0 V39" fill="none" stroke="#0E8E63" stroke-width="7" stroke-linecap="round"/>
+              <path d="M24 40 H72 a6 6 0 0 1 6 6 l-4 30 a8 8 0 0 1 -8 7 H30 a8 8 0 0 1 -8 -7 l-4 -30 a6 6 0 0 1 6 -6 z" fill="url(#cL)"/>
+              <path d="M35 61 L45 71 L62 48" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="62" cy="48" r="5.5" fill="#F5A524"/>
+            </svg>
+          </div>
+          <div class="tile dark">
+            <svg viewBox="0 0 96 96" aria-label="Hướng C đảo màu">
+              <path d="M35 39 V32 a13 13 0 0 1 26 0 V39" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+              <path d="M24 40 H72 a6 6 0 0 1 6 6 l-4 30 a8 8 0 0 1 -8 7 H30 a8 8 0 0 1 -8 -7 l-4 -30 a6 6 0 0 1 6 -6 z" fill="#fff"/>
+              <path d="M35 61 L45 71 L62 48" fill="none" stroke="#0A6B4B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="62" cy="48" r="5.5" fill="#F5A524"/>
+            </svg>
+          </div>
+        </div>
+        <div class="body">
+          <span class="rank"><span class="dot"></span>Trực diện</span>
+          <h3>C · Túi đơn ✓</h3>
+          <p class="why">Túi mua hàng gắn dấu tích — “đơn hàng thật”. Dễ hiểu tức thì với người bán, thân thiện, hợp sticker / bao bì số.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WORDMARK -->
+  <section>
+    <div class="head">
+      <div class="eyebrow">Khóa chữ (hướng A)</div>
+      <h2>Cách xếp chữ &amp; biểu tượng</h2>
+      <p>“Đơn” dùng mực đậm, “Thật” dùng xanh pine để màu tự kể nghĩa: phần <em>thật</em> = đã xác thực.</p>
+    </div>
+    <div class="locks">
+      <div class="lockcard">
+        <div class="h-lock">
+          <svg class="mark" viewBox="0 0 96 96" aria-hidden="true">
+            <defs><linearGradient id="wmH" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs>
+            <rect x="10" y="10" width="76" height="76" rx="22" fill="url(#wmH)"/>
+            <path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="71" cy="29" r="6" fill="#F5A524"/>
+          </svg>
+          <div class="wm"><span>Đơn</span><span class="t">Thật</span></div>
+        </div>
+        <div class="cap">Khóa ngang · dùng chính</div>
+      </div>
+      <div class="lockcard">
+        <div class="v-lock">
+          <svg class="mark" viewBox="0 0 96 96" aria-hidden="true">
+            <defs><linearGradient id="wmV" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs>
+            <rect x="10" y="10" width="76" height="76" rx="22" fill="url(#wmV)"/>
+            <path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="71" cy="29" r="6" fill="#F5A524"/>
+          </svg>
+          <div class="wm"><span>Đơn</span><span class="t">Thật</span></div>
+          <div class="sub">Lên đơn thật</div>
+        </div>
+        <div class="cap">Khóa dọc · avatar / bao bì</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALETTE -->
+  <section>
+    <div class="head">
+      <div class="eyebrow">Bảng màu</div>
+      <h2>Xanh xác thực · cam thương mại</h2>
+      <p>Xanh pine là màu chủ (tin cậy, “đơn thật”), tách khỏi cam Shopee &amp; đỏ/xanh TikTok. Cam chỉ dùng điểm nhấn nhỏ (đơn mới).</p>
+    </div>
+    <div class="swatches">
+      <div class="sw"><div class="cap" style="background:#0E8E63"></div><div class="info"><span class="nm">Pine</span><span class="hex">#0E8E63</span><span class="role">Màu chủ · logo, nút</span></div></div>
+      <div class="sw"><div class="cap" style="background:#0A6B4B"></div><div class="info"><span class="nm">Pine Deep</span><span class="hex">#0A6B4B</span><span class="role">Chiều sâu · gradient</span></div></div>
+      <div class="sw"><div class="cap" style="background:#34D399"></div><div class="info"><span class="nm">Mint</span><span class="hex">#34D399</span><span class="role">Nhấn sáng · nền tối</span></div></div>
+      <div class="sw"><div class="cap" style="background:#F5A524"></div><div class="info"><span class="nm">Amber</span><span class="hex">#F5A524</span><span class="role">Điểm nhấn · “đơn mới”</span></div></div>
+      <div class="sw"><div class="cap" style="background:#12201B"></div><div class="info"><span class="nm">Ink</span><span class="hex">#12201B</span><span class="role">Chữ · nền đậm</span></div></div>
+      <div class="sw"><div class="cap" style="background:#F6F7F3;border-bottom:1px solid #E4E9E2"></div><div class="info"><span class="nm">Paper</span><span class="hex">#F6F7F3</span><span class="role">Nền sáng</span></div></div>
+    </div>
+  </section>
+
+  <!-- SIZES -->
+  <section>
+    <div class="head">
+      <div class="eyebrow">Kiểm cỡ nhỏ</div>
+      <h2>Rõ từ 16px đến app icon</h2>
+      <p>Hướng A giữ được nét ở cỡ favicon. Xem thử biểu tượng ở các cỡ thật.</p>
+    </div>
+    <div class="sizes">
+      <div class="size">
+        <svg width="16" height="16" viewBox="0 0 96 96"><defs><linearGradient id="s16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs><rect x="10" y="10" width="76" height="76" rx="22" fill="url(#s16)"/><path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="71" cy="29" r="6" fill="#F5A524"/></svg>
+        <span class="lab">16px</span>
+      </div>
+      <div class="size">
+        <svg width="32" height="32" viewBox="0 0 96 96"><defs><linearGradient id="s32" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs><rect x="10" y="10" width="76" height="76" rx="22" fill="url(#s32)"/><path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="71" cy="29" r="6" fill="#F5A524"/></svg>
+        <span class="lab">32px</span>
+      </div>
+      <div class="size">
+        <svg width="48" height="48" viewBox="0 0 96 96"><defs><linearGradient id="s48" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs><rect x="10" y="10" width="76" height="76" rx="22" fill="url(#s48)"/><path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="71" cy="29" r="6" fill="#F5A524"/></svg>
+        <span class="lab">48px</span>
+      </div>
+      <div class="size">
+        <svg width="72" height="72" viewBox="0 0 96 96"><defs><linearGradient id="s72" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#12A16B"/><stop offset="1" stop-color="#0A6B4B"/></linearGradient></defs><rect x="10" y="10" width="76" height="76" rx="22" fill="url(#s72)"/><path d="M27 50 L42 65 L71 29" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="71" cy="29" r="6" fill="#F5A524"/></svg>
+        <span class="lab">72px</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTE -->
+  <section>
+    <div class="note">
+      <h3>Bản quyền &amp; điều cần biết trước khi dùng</h3>
+      <ul>
+        <li><strong>Tên “ĐơnThật” vẫn là ĐỀ XUẤT</strong> — chờ Legal tra Cục SHTT (Nhóm 41+9) + domain. Chưa in ấn / đăng ký / chi tiền vào brand tới khi xác nhận tên đăng ký được (theo quyết định đã chốt trong vault).</li>
+        <li><strong>Logo là vector gốc, tự vẽ 100%</strong> — không dùng Canva Pro elements, không ảnh AI raster license mập mờ. Đúng kỷ luật bản quyền của chính thương hiệu; nộp kèm đơn SHTT được.</li>
+        <li><strong>Chữ trong khóa chữ đang dùng font hệ thống</strong> để hiển thị đúng dấu tiếng Việt. Khi chốt hướng, nên chọn 1 font chữ chính thức rồi <em>chuyển chữ thành đường (outline)</em> để logo cố định, không phụ thuộc máy người xem.</li>
+        <li><strong>File nguồn:</strong> 3 SVG gốc nằm ở <code>03-Outputs/brand/</code> trong vault — sửa/đổi màu được ngay.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>ĐơnThật · đề xuất logo — nháp 1</span>
+    <span>SVG gốc · xanh pine #0E8E63</span>
+  </footer>
+
+</div>

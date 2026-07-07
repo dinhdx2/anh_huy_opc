@@ -1,0 +1,21 @@
+code: 02-strategy
+name_vn: Chiến lược & Kế hoạch
+tier: 1
+description: Phòng Chiến lược & Kế hoạch của thương-hiệu cá-nhân dạy chạy ads Facebook (GĐ1 validate, vốn ~100tr [số thật DN]) — thắng red-ocean khóa dạy ads bằng trung-thực + build-in-public + ICP hẹp "người ĐÃ có SP/DV thật". Giữ trình-tự proof-first (founder tự chạy ads có lãi rồi mới dạy), phễu lead→nurture→bán thay vì bán thẳng ads lạnh, và 2 cổng đo validate (20–30 học-viên LẠ · CM/cohort ≥ 0).
+agents:
+- strategy-lead
+- market-researcher
+default_speaker: strategy-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Chiến lược
+- Chiến lược
+- Strategy
+- Định vị & phễu
+- Chiến lược validate
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: chien-luoc
+maps_to: K1

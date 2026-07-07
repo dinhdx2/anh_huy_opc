@@ -1,0 +1,20 @@
+code: 13-content-ip
+name_vn: Sản xuất Nội dung số & Bản quyền
+tier: 4
+description: Phòng Sản xuất Nội dung số & Bản quyền — pipeline sản-xuất khóa "Chạy ads Facebook từ 0" (outline → quay/dựng video bài giảng → tài-liệu/template kèm → QC âm-thanh/hình & tính đúng của hướng-dẫn theo policy FB mới nhất → đóng-gói LMS); bản-quyền sạch (giáo-trình tự tạo, ví-dụ từ campaign của chính founder, nhạc/ảnh/font có license), chống share lậu (watermark, quyền truy-cập), versioning khóa theo thay-đổi policy/thuật-toán FB — lý-do "khóa luôn mới" là moat
+agents:
+- content-ip-lead
+default_speaker: content-ip-lead
+refs_folder: refs/
+depends_on:
+- 09-product-tech
+- 01-governance
+- 07-marketing
+aliases_vn:
+- Phòng Nội dung số & Bản quyền
+- Content & IP
+- Sản xuất nội dung số
+- Sản xuất khóa học
+- Video bài giảng
+- Bản quyền
+- LMS

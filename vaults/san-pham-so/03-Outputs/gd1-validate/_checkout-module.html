@@ -1,0 +1,146 @@
+<!-- ===== DonThat · Checkout VietQR (SePay) — chen tu dong, dung sua tay ===== -->
+<div id="dt-checkout" aria-hidden="true">
+  <div class="dt-co-backdrop" data-dt-close></div>
+  <div class="dt-co-card" role="dialog" aria-modal="true" aria-labelledby="dt-co-title">
+    <button class="dt-co-x" data-dt-close aria-label="Đóng">&times;</button>
+
+    <div class="dt-co-step" data-step="pay">
+      <div class="dt-co-eyebrow">Thanh toán 1 lần &middot; giao ngay sau khi chuyển khoản</div>
+      <h3 id="dt-co-title">Quét mã để thanh toán <b>179.000đ</b></h3>
+
+      <div class="dt-co-grid">
+        <div class="dt-co-qr">
+          <img id="dt-co-qrimg" alt="Mã VietQR thanh toán ĐơnThật" width="220" height="220"/>
+          <div class="dt-co-qrhint">Mở app ngân hàng &rarr; quét mã &rarr; <b>giữ nguyên nội dung</b></div>
+        </div>
+        <div class="dt-co-manual">
+          <div class="dt-co-row"><span>Ngân hàng</span><b>VietinBank</b></div>
+          <div class="dt-co-row"><span>Số tài khoản</span><b class="dt-co-copy" data-copy="81908666">81908666 <i>sao chép</i></b></div>
+          <div class="dt-co-row"><span>Chủ tài khoản</span><b>DO XUAN DINH</b></div>
+          <div class="dt-co-row"><span>Số tiền</span><b>179.000đ</b></div>
+          <div class="dt-co-row"><span>Nội dung <em>(bắt buộc đúng)</em></span><b class="dt-co-copy" id="dt-co-code" data-copy="">&mdash;</b></div>
+        </div>
+      </div>
+
+      <div class="dt-co-status" id="dt-co-status">
+        <span class="dt-co-spin"></span> Đang chờ bạn chuyển khoản… trang sẽ tự mở link tải khi nhận được tiền.
+      </div>
+      <button class="dt-co-check" id="dt-co-check">Tôi đã chuyển khoản &mdash; kiểm tra ngay</button>
+      <div class="dt-co-fine">Đúng <b>số tiền</b> và <b>nội dung</b> ở trên thì hệ thống tự đối soát. Giữ tab này mở.</div>
+    </div>
+
+    <div class="dt-co-step" data-step="done" hidden>
+      <div class="dt-co-check-badge">&check;</div>
+      <h3>Đã nhận thanh toán &mdash; cảm ơn bạn!</h3>
+      <p class="dt-co-doneinfo">Mã đơn: <b id="dt-co-doneref">&mdash;</b></p>
+      <a id="dt-co-download" class="dt-co-dl" href="#" download>Tải Kit “Lên đơn” ngay</a>
+      <div class="dt-co-fine">Link cũng đã sẵn ở đây &mdash; lưu lại phòng khi cần tải lại.</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #dt-checkout{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  #dt-checkout.dt-open{display:flex}
+  .dt-co-backdrop{position:absolute;inset:0;background:rgba(12,20,15,.62)}
+  .dt-co-card{position:relative;background:#fff;color:#12201b;width:min(560px,92vw);max-height:92vh;overflow:auto;border-radius:20px;padding:26px 24px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+  .dt-co-x{position:absolute;top:12px;right:14px;border:0;background:transparent;font-size:26px;line-height:1;color:#8a978f;cursor:pointer}
+  .dt-co-eyebrow{font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:#0e8e63;font-weight:700}
+  .dt-co-card h3{margin:.35em 0 .7em;font-size:1.3rem;line-height:1.25}
+  .dt-co-card h3 b{color:#0e8e63}
+  .dt-co-grid{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
+  .dt-co-qr{flex:0 0 auto;text-align:center}
+  .dt-co-qr img{border:1px solid #e4e9e2;border-radius:14px;background:#fff;width:220px;height:220px;object-fit:contain}
+  .dt-co-qrhint{font-size:.76rem;color:#5c6b63;margin-top:8px;max-width:220px}
+  .dt-co-manual{flex:1 1 200px;display:grid;gap:9px;min-width:200px}
+  .dt-co-row{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;border-bottom:1px dashed #e4e9e2;padding-bottom:7px}
+  .dt-co-row span{color:#5c6b63}
+  .dt-co-row span em{color:#c0392b;font-style:normal}
+  .dt-co-row b{text-align:right}
+  .dt-co-row b i{font-style:normal;font-size:.7rem;color:#0e8e63;font-weight:600}
+  .dt-co-copy{cursor:pointer}
+  .dt-co-status{margin:18px 0 12px;font-size:.9rem;color:#12201b;background:#f0faf5;border:1px solid #cfeadd;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:9px}
+  .dt-co-spin{width:15px;height:15px;border:2px solid #bfeada;border-top-color:#0e8e63;border-radius:50%;display:inline-block;animation:dtspin 1s linear infinite;flex:none}
+  @keyframes dtspin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.dt-co-spin{animation:none}}
+  .dt-co-check{width:100%;background:#0e8e63;color:#fff;border:0;border-radius:12px;padding:13px;font-size:1rem;font-weight:700;cursor:pointer}
+  .dt-co-check:hover{background:#0b7452}
+  .dt-co-fine{font-size:.76rem;color:#7a887f;margin-top:10px;text-align:center}
+  .dt-co-check-badge{width:56px;height:56px;border-radius:50%;background:#0e8e63;color:#fff;font-size:30px;display:grid;place-items:center;margin:4px auto 10px}
+  .dt-co-step[data-step="done"]{text-align:center}
+  .dt-co-dl{display:inline-block;margin-top:6px;background:#f5a524;color:#12201b;font-weight:800;text-decoration:none;padding:14px 22px;border-radius:12px}
+  .dt-co-dl:hover{filter:brightness(.96)}
+</style>
+
+<script>
+(function(){
+  var CFG = { bank:"VietinBank", acc:"81908666", holder:"DO XUAN DINH", amount:179000, statusApi:"/api/order-status" };
+  var el = document.getElementById("dt-checkout");
+  if(!el) return;
+  var codeEl = document.getElementById("dt-co-code");
+  var qrEl = document.getElementById("dt-co-qrimg");
+  var statusEl = document.getElementById("dt-co-status");
+  var checkBtn = document.getElementById("dt-co-check");
+  var stepPay = el.querySelector('[data-step="pay"]');
+  var stepDone = el.querySelector('[data-step="done"]');
+  var pollTimer = null, tries = 0, currentCode = null;
+
+  function genCode(){ return "DT" + Date.now().toString(36).toUpperCase() + Math.random().toString(36).slice(2,5).toUpperCase(); }
+  // VietinBank + SePay: noi dung BAT BUOC bat dau bang "SEVQR" thi SePay moi nhan bien dong so du.
+  function payContent(code){ return "SEVQR " + code; }
+  function qrUrl(code){ return "https://qr.sepay.vn/img?acc="+encodeURIComponent(CFG.acc)+"&bank="+encodeURIComponent(CFG.bank)+"&amount="+CFG.amount+"&des="+encodeURIComponent(payContent(code)); }
+
+  function open(){
+    currentCode = genCode(); tries = 0;
+    var content = payContent(currentCode);
+    codeEl.setAttribute("data-copy", content);
+    codeEl.textContent = content;
+    qrEl.src = qrUrl(currentCode);
+    stepDone.hidden = true; stepPay.hidden = false;
+    statusEl.innerHTML = '<span class="dt-co-spin"></span> Đang chờ bạn chuyển khoản… trang sẽ tự mở link tải khi nhận được tiền.';
+    el.classList.add("dt-open"); el.setAttribute("aria-hidden","false");
+    startPoll();
+  }
+  function close(){ el.classList.remove("dt-open"); el.setAttribute("aria-hidden","true"); stopPoll(); }
+  function startPoll(){ stopPoll(); pollTimer = setInterval(check, 5000); }
+  function stopPoll(){ if(pollTimer){ clearInterval(pollTimer); pollTimer=null; } }
+
+  function check(){
+    if(!currentCode) return;
+    tries++;
+    if(tries > 72){ stopPoll(); statusEl.innerHTML = "Chưa thấy giao dịch. Nếu đã chuyển, đợi 1–2 phút rồi bấm “kiểm tra ngay”."; return; }
+    fetch(CFG.statusApi + "?code=" + encodeURIComponent(currentCode) + "&amount=" + CFG.amount, {cache:"no-store"})
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        if(d && d.paid){
+          stopPoll();
+          document.getElementById("dt-co-doneref").textContent = d.ref || currentCode;
+          document.getElementById("dt-co-download").href = d.download || "#";
+          stepPay.hidden = true; stepDone.hidden = false;
+        }
+      })
+      .catch(function(){});
+  }
+
+  el.addEventListener("click", function(e){
+    var c = e.target.closest(".dt-co-copy");
+    if(c){
+      var v = c.getAttribute("data-copy") || "";
+      if(navigator.clipboard) navigator.clipboard.writeText(v);
+      var b = c.querySelector("i"); var old = b ? b.textContent : null;
+      if(b){ b.textContent = "đã chép"; setTimeout(function(){ b.textContent = old; }, 1200); }
+    }
+    if(e.target.closest("[data-dt-close]")) close();
+  });
+  checkBtn.addEventListener("click", check);
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape") close(); });
+
+  function wire(){
+    document.querySelectorAll('a.btn-cta, a[href="[CHECKOUT_URL]"]').forEach(function(a){
+      a.addEventListener("click", function(ev){ ev.preventDefault(); open(); });
+    });
+  }
+  if(document.readyState !== "loading") wire(); else document.addEventListener("DOMContentLoaded", wire);
+})();
+</script>
+<!-- ===== het module checkout ===== -->

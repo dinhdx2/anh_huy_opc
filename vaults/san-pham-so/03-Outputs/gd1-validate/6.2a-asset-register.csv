@@ -1,0 +1,6 @@
+asset_id,ten_asset,loai,nguon,license,commercial_ok,bang_chung_license,trang_thai
+ASSET-001,Kit "Lên Đơn" v1.0 (6 file .md văn-bản),Nội-dung text,Tự soạn 100% (0 asset bên ngoài),Tự sở hữu (original work),YES,kit/ 6 file + gate 1.2c PASS 5/5,ACTIVE
+ASSET-002,Slide Hướng Dẫn 10 Bước,Template/PDF,dự-kiến (Canva Free - KHÔNG Pro elements),tự sở hữu,N/A,CHƯA sản-xuất,PLANNED (không có trong kit v1.0)
+ASSET-003,Video Demo TikTok 60s,Video,dự-kiến (quay gốc + DaVinci Resolve),tự sở hữu,N/A,CHƯA sản-xuất,PLANNED (không có trong kit v1.0)
+ASSET-004,Nhạc nền video quảng cáo,Audio,chưa chọn,CHƯA XÁC NHẬN,NO,chưa có license,STOP - KHÔNG DÙNG tới khi có license
+ASSET-005,Icon bộ nhận diện thương hiệu,Vector/SVG,logo ĐơnThật tự vẽ (xem 03-Outputs/brand/),tự sở hữu,YES,brand/logo-*.svg (SVG gốc tự vẽ),ACTIVE

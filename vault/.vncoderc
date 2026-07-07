@@ -1,0 +1,38 @@
+# Cấu hình vn-opc cho doanh nghiệp
+# Sinh bởi /vn-onboard (bản web/mobile) — tinh chỉnh 2026-06-25 theo khai báo CEO
+company_name: "POD Store — Vlog/Lifestyle/Comedy (B2C, US)"
+industry: "Print-on-Demand (POD) cross-border e-commerce — niche fan YouTube Vlog/Lifestyle/Comedy, B2C, thị trường Mỹ"
+onboarded_at: "2026-06-25"
+
+# --- Khai báo CEO đã chốt (PAUSE 1, 2026-06-25) ---
+business_model: "B2C — tự thiết kế & bán merch cho fan (KHÔNG làm dịch vụ B2B cho creator giai đoạn này)"
+niche: "Vlog / Lifestyle / Comedy"
+market: "US (Mỹ)"
+launch_budget_30d_usd: "5000"
+go_to_market: "Store Shopify tự dựng + ads trả phí (TikTok/FB) — founder tự chạy ads"
+stage: "Giai đoạn 0 — pre-launch, CHƯA có tài khoản/kỹ năng/store (khởi đầu từ 0 tuyệt đối)"
+founder_does: "Dựng store Shopify + tự chạy ads"
+assets_now: "Chưa có (cần mở mọi tài khoản từ đầu)"
+
+active_packs: []   # dùng 12 phòng nền; có thể sinh pack POD riêng sau nếu cần phòng chuyên biệt
+
+# Đặc thù ngành cần lưu ý xuyên suốt (các phòng đọc Brain để áp dụng):
+industry_notes:
+  - "Sở hữu trí tuệ: niche Comedy/Lifestyle dựa trên quote/humor đời sống chung → RỦI RO IP THẤP HƠN gaming, NHƯNG vẫn cấm dùng tên/khuôn mặt/catchphrase độc quyền hay đã đăng ký nhãn hiệu của creator cụ thể khi chưa có license."
+  - "Thị trường Mỹ: sales tax theo nexus từng bang (sàn thường tự thu hộ — marketplace facilitator), luật FTC, chính sách hoàn trả minh bạch."
+  - "Fulfillment qua Printify/Printful/Gelato với US print partner để giao nhanh nội địa Mỹ — không giữ tồn kho; biên gộp ~40-55%, ads là chi phí lớn nhất."
+  - "Kênh ưu tiên cho niche text/funny: TikTok Shop US + Shopify + Etsy (organic). Thanh toán Stripe/PayPal/Payoneer."
+
+active_departments:
+  - dept-01-governance      # Pháp chế & IP — gác cổng bản quyền cho mọi design
+  - dept-02-strategy
+  - dept-03-finance
+  - dept-04-people
+  - dept-05-operations      # fulfillment, supplier, logistics tới Mỹ
+  - dept-06-sales
+  - dept-07-marketing       # ads TikTok/FB/Google, SEO listing Etsy
+  - dept-08-customer
+  - dept-09-product-tech     # design, store tech, automation
+  - dept-10-training
+  - dept-11-reporting
+  - dept-12-growth

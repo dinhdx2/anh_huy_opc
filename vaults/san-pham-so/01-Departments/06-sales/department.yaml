@@ -1,0 +1,41 @@
+code: 06-sales
+name_vn: Kinh doanh & Bán hàng
+tier: 3
+description: Phòng Kinh doanh & Bán hàng của ĐơnThật — bán B2C sản phẩm số qua phễu ads → landing → chốt đơn tự-động; thang giá-trị kit "lên đơn" 149–199k → khóa mini 299–999k → khóa lớn 1.5–5tr; chăm lead & khách qua email/Zalo OA (KHÔNG mô-hình sales B2B gọi điện hợp-đồng lớn).
+agents:
+- sales-lead
+- account-manager
+- sdr
+default_speaker: sales-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - account
+  - key account
+  - kh lớn
+  - upsell
+  - cross-sell
+  - khách cũ
+  - giữ chân khách
+  agent: account-manager
+- keywords:
+  - lead
+  - prospect
+  - tìm khách
+  - lead magnet
+  - email list
+  - zalo oa
+  - đầu phễu
+  agent: sdr
+aliases_vn:
+- Phòng Kinh doanh
+- Kinh doanh
+- Sales
+- Bán hàng số
+- Phễu & Chốt đơn
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: ban-hang
+maps_to: K3

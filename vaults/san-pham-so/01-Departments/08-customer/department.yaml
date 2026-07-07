@@ -1,0 +1,23 @@
+code: 08-customer
+name_vn: Khách hàng & Dịch vụ
+tier: 3
+description: CSKH cho SP số B2C của ĐơnThật — hỗ trợ tải file/truy cập khóa, chính sách hoàn tiền/đổi SP số rõ ràng (SP không "hoàn về" được), nuôi cộng-đồng nhà bán mới (Zalo/FB group) làm viral loop zero-CAC. GĐ1 chưa có khách → dựng SOP + chính sách TRƯỚC khi bán hero; NPS/review thật là proof, retention = khách mua SP KẾ trong thang giá-trị (kit → khóa mini → khóa lớn).
+agents:
+- cs-lead
+- support-tier1
+- retention-officer
+default_speaker: cs-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Chăm sóc Khách hàng
+- Khách hàng
+- CSKH
+- CS
+- Hỗ trợ khách hàng
+- Cộng đồng nhà bán
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: khach-hang
+maps_to: K3

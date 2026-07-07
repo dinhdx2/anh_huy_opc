@@ -1,0 +1,57 @@
+code: 07-marketing
+name_vn: Marketing & Thương hiệu
+tier: 3
+description: Phòng TRỌNG TÂM GĐ1 của ĐơnThật — chạy paid-led ads (Meta/TikTok) có kỷ-luật trong trần 15–30tr/tháng để bán kit "lên đơn" 149–199k cho nhà bán mới TikTok Shop/Shopee, đo CPL/CAC/ROAS qua cổng contribution-margin, mọi chiến-dịch đều thu email + Zalo OA (moat). Tuân Luật Quảng cáo (không hứa "lên nghìn đơn"/"giàu nhanh"); SEO/organic là kênh phụ dài-hạn.
+agents:
+- brand-manager
+- content-creator
+- ads-specialist
+- seo-specialist
+default_speaker: brand-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - ads
+  - quảng cáo
+  - fb
+  - google
+  - campaign
+  - tiktok
+  - meta
+  - roas
+  - cac
+  - cpl
+  - contribution margin
+  - creative test
+  - trần ngân sách
+  agent: ads-specialist
+- keywords:
+  - seo
+  - rank
+  - organic
+  - từ khóa
+  - traffic tự nhiên
+  agent: seo-specialist
+- keywords:
+  - content
+  - viết bài
+  - editorial
+  - landing
+  - email
+  - zalo oa
+  - lead magnet
+  - kịch bản video
+  - hook
+  agent: content-creator
+aliases_vn:
+- Phòng Marketing
+- Marketing
+- MKT
+- Marketing số
+- Quảng cáo & Phễu
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: marketing
+maps_to: K3

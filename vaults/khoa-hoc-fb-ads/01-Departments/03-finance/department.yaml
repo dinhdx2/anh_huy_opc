@@ -1,0 +1,44 @@
+code: 03-finance
+name_vn: Tài chính & Kế toán
+tier: 2
+description: Phòng Tài chính & Kế toán của thương-hiệu cá-nhân bán khóa dạy ads Facebook (GĐ1, vốn ~100tr [số thật DN]) — gác unit economics info-product qua cổng CM/cohort ≥ 0 với giá khóa 399–599k [số thật DN]; điểm chết bán thẳng ads lạnh (CPL 50–150k × lead→mua 2–5% → 1–7,5tr/đơn [benchmark ngành — cần CEO xác minh]) buộc đi phễu + backend. Quản chi ads bậc-thang 8–10tr→10–20tr/tháng theo cổng vốn; thuế thu-nhập bán khóa online + hóa-đơn điện-tử.
+agents:
+- cfo
+- accountant
+- financial-analyst
+default_speaker: cfo
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - kế toán
+  - phiếu thu chi
+  - hạch toán
+  - thuế hộ kinh doanh
+  - thuế tncn
+  - hóa đơn điện tử
+  - kê khai
+  - đối soát
+  agent: accountant
+- keywords:
+  - phân tích
+  - báo cáo tc
+  - unit economics
+  - cm/cohort
+  - cac
+  - cpl
+  - hòa vốn
+  - kịch bản phễu
+  agent: financial-analyst
+aliases_vn:
+- Phòng Tài chính
+- Tài chính
+- Kế toán
+- Finance
+- Ngân sách ads
+- Unit economics
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: tai-chinh
+maps_to: K2
