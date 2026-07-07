@@ -7,8 +7,9 @@ module.exports = [
   { milestone: 'M1', ten: 'telos + altitude (Brain 2 lớp + G0)', spec: ['02', '08'],
     artifacts: [
       'lib/brain.js', 'knowledge/brain-schema.md',
-      'vault/00-Brain/telos.md', 'vault/00-Brain/positioning.md', 'vault/00-Brain/curves.md',
-      'vault/00-Brain/structure.md', 'vault/00-Brain/lessons.md',
+      // Điểm-cắm Brain 2 lớp = KHUNG template (_SEED liệt-kê telos/positioning/curves/structure/lessons),
+      // KHÔNG neo vào vault DN cụ-thể (vault DN ephemeral, xoá được khi dọn kho).
+      'vaults/_TEMPLATE/00-Brain/_SEED.md',
       'test/brain.test.js',
     ] },
   { milestone: 'M2', ten: 'taxonomy + stage-detect + tên-kép', spec: ['04', '03a', '06'],

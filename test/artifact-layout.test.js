@@ -9,12 +9,16 @@ const ROOT = path.resolve(__dirname, '..')
 const exists = p => fs.existsSync(path.join(ROOT, p))
 const read = p => fs.readFileSync(path.join(ROOT, p), 'utf8')
 
-// §8 §3.1 — bộ Brain (5 canonical + 2 bộ-nhớ + 5 sinh-thành) có template trong vault
-test('L8 Brain — đủ template 00-Brain (telos/positioning/curves/structure/hiện-trạng/bộ-nhớ)',
+// §8 §3.1 — bộ Brain (5 canonical + 2 bộ-nhớ + 5 sinh-thành) có khung template trong _TEMPLATE.
+// Nguồn chuẩn = vaults/_TEMPLATE/00-Brain/_SEED.md (onboarder sinh 12 file từ đây); KHÔNG neo vào
+// một vault DN cụ-thể (vault DN là ephemeral, có thể xoá khi dọn kho).
+test('L8 Brain — _TEMPLATE/00-Brain/_SEED.md khai đủ bộ Brain (5 canonical + 2 bộ-nhớ + 5 sinh-thành)',
   ['LG-8-telos', 'LG-8-positioning', 'LG-8-curves', 'LG-8-structure', 'LG-8-hientrang', 'LG-8-memory'], t => {
     const must = ['strategy', 'products', 'budget', 'state', 'headcount', 'decisions-log',
       'calibration', 'telos', 'positioning', 'curves', 'structure', 'lessons']
-    for (const f of must) t.ok(exists(`vault/00-Brain/${f}.md`), `có vault/00-Brain/${f}.md`)
+    t.ok(exists('vaults/_TEMPLATE/00-Brain/_SEED.md'), 'có vaults/_TEMPLATE/00-Brain/_SEED.md')
+    const seed = read('vaults/_TEMPLATE/00-Brain/_SEED.md')
+    for (const f of must) t.ok(seed.includes(`${f}.md`), `_SEED khai ${f}.md`)
   })
 
 // §8 §3.2 — slot task ổn-định: skill ghi đúng 02-Tasks/<slug>/{08,06,10-thuc-thi,10-run-state}
