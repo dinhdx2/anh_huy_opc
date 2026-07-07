@@ -1,6 +1,6 @@
 # README — Deploy landing BỘMẪU (hero launch)
 
-> TL;DR: `landing.html` là 1 file HTML **tự-chứa 100%** (không CSS/JS/font/ảnh ngoài) — mở trực-tiếp bằng trình-duyệt để xem thử, hoặc kéo-thả lên Vercel/Netlify để có link công-khai trong 1 phút. Có **6 chỗ placeholder** cần thay bằng dữ-liệu thật trước khi chạy ads/launch chính-thức (xem mục 3 bên dưới).
+> TL;DR: `landing.html` là 1 file HTML **tự-chứa 100%** (không CSS/JS/font/ảnh ngoài) — mở trực-tiếp bằng trình-duyệt để xem thử, hoặc kéo-thả lên Vercel/Netlify để có link công-khai trong 1 phút. **Bản chuyên-nghiệp (redesign):** thêm trước/sau · 3 bước · bảng so-sánh vs Excel-free/thuê kế-toán · cam-kết · bảo-đảm hoàn tiền · khu đánh-giá · trust-badges. Có **7 chỗ placeholder** cần thay trước khi launch (xem mục 3).
 
 ## 1. Xem thử ngay (không cần deploy)
 - Cách nhanh nhất: mở file `landing.html` bằng trình-duyệt (Chrome/Edge/Safari) — double-click file, hoặc chuột-phải → "Open with" → chọn trình-duyệt.
@@ -37,14 +37,15 @@ File có sẵn comment `<!-- TODO(...) -->` ở đúng vị-trí trong `landing.
 | 3 | Link "Zalo OA" ở footer (`zalo.me/xxxxxxxxxxxxxxxxx`) | Placeholder giả | Link Zalo OA thật của BỘMẪU sau khi tạo OA. |
 | 4 | Email liên-hệ (`hi@bomau.vn`) | Placeholder (domain có thể chưa tồn-tại) | Email thật đang dùng, hoặc email tạm (Gmail) nếu domain chưa mua. |
 | 5 | Giá "149.000đ / 179.000đ" (section `#gia`) | Đang để 149.000đ là giá ưu-đãi, 179.000đ giá gạch — cả 2 nằm trong khoảng CEO đã duyệt (`products.md`) | CEO chốt số CUỐI-CÙNG trong khoảng 149–179k rồi sửa cả 2 số + order-bump "49.000đ/79.000đ" cho khớp. |
-| 6 | Link "Chính-sách bảo-mật" / "Chính-sách hoàn-tiền" (`href="privacy-policy.md"` — 2 chỗ: form opt-in + footer) | Trỏ tới file `privacy-policy.md` **CHƯA TỒN-TẠI** (đây là việc A5 riêng trong execution-plan, do phòng Governance/Pháp-chế soạn) | Soạn `privacy-policy.md` (+ chính-sách hoàn-tiền) rồi đổi link cho khớp đường-dẫn thật khi đã có domain (`https://bomau.vn/privacy-policy` chẳng hạn). **KHÔNG launch thu email/Zalo khi link này còn 404** — vi-phạm nguyên-tắc minh-bạch NĐ 13/2023. |
+| 6 | Link "Chính-sách bảo-mật" / "Chính-sách hoàn-tiền" (`href="privacy-policy.md"` — 2 chỗ: form opt-in + footer) | Trỏ tới file `privacy-policy.md` (đã có bản MẪU ở `../compliance/`, cần Legal duyệt) | Đưa `privacy-policy` bản Legal-duyệt lên host + đổi link khớp domain thật. **KHÔNG launch thu email/Zalo khi link còn 404/chưa duyệt** — theo pháp-luật bảo-vệ dữ-liệu cá-nhân hiện-hành (**Luật 91/2025/QH15 + NĐ 356/2025**, KHÔNG còn là NĐ 13/2023). |
+| 7 | Khu "Đánh giá khách hàng" (`#danh-gia`, 3 thẻ `.rev`) | **Ô GIỮ CHỖ** ghi rõ "[Chỗ dành cho đánh-giá thật]" — CHƯA có review giả | Thay bằng **REVIEW THẬT** (kèm tên/ảnh nếu khách đồng-ý) sau khi có khách đầu-tiên. ⚠️ **TUYỆT ĐỐI không dùng review giả** — vi-phạm Luật Quảng-cáo & mất niềm tin. Chưa có review → có thể ẩn cả section (xoá khối `#danh-gia`). |
 
 Ngoài ra:
 - **Tên "BỘMẪU"** đang **chờ Legal tra Cục Sở-hữu Trí-tuệ** (nhóm 9+42) + domain (xem `strategy.md`, mục B3 execution-plan). Nếu Legal yêu-cầu đổi tên, tìm-thay toàn-bộ chuỗi "BỘMẪU"/"BộMẫu" trong `landing.html`.
 - **Domain:** chưa cần domain riêng để TEST (dùng link `*.vercel.app`/`*.netlify.app` tạm ổn). Chỉ mua domain (.vn/.com) sau khi Legal PASS bước tra SHTT, tránh đầu-tư vào tên có rủi-ro bị yêu-cầu đổi.
 
-## 4. Không commit git
-Theo yêu-cầu tác-vụ, các file này **CHƯA được `git add/commit`**. CEO/AI quyết định lúc nào đưa vào repo (theo nguyên-tắc lưu bền-vững ở `CLAUDE.md`, nhớ commit trước khi kết-thúc phiên nếu muốn giữ lại).
+## 4. Lưu git
+Các file đã được commit/push vào nhánh `claude/wonderful-sagan-awc8lf` (lưu bền-vững — web ephemeral). Mỗi lần chỉnh landing nhớ commit lại.
 
 ## 5. Đối-chiếu với kế-hoạch
 File này tương-ứng mục **A4 — "Landing page hero"** trong `../../../02-Tasks/2026-07-07-1023-phan-tich-ngach-doi-thu/08-execution-plan.md`. Việc B1 (chạy ads), B2 (đăng-ký SePay), B3 (Legal SHTT) vẫn đang **NEED-APPROVAL/HUMAN-ONLY** — landing này chỉ là tài-sản chuẩn-bị, **CHƯA được publish/chạy ads thật**.
