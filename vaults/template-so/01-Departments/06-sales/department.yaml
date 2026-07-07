@@ -1,0 +1,45 @@
+code: 06-sales
+name_vn: Kinh doanh & Bán hàng
+tier: 3
+description: Phòng Kinh doanh & Bán hàng — vận-hành phễu tripwire self-serve (hero template 99–199k + order-bump + upsell bundle) và cross-sell thư-viện template trên landing riêng + chợ (Etsy/Creative Market/Gumroad), ít "sale gọi điện" B2C cho DN bán template số tiếng Việt.
+agents:
+- sales-lead
+- account-manager
+- sdr
+default_speaker: sales-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - account
+  - key account
+  - kh lớn
+  - upsell bundle
+  - cross-sell thư viện template
+  - khách mua lại
+  - bundle template
+  agent: account-manager
+- keywords:
+  - lead
+  - prospect
+  - tìm khách
+  - order-bump
+  - order bump
+  - tripwire
+  - phễu self-serve
+  - thu email
+  - zalo oa
+  agent: sdr
+aliases_vn:
+- Phòng Kinh doanh
+- Kinh doanh
+- Sales
+- Bán hàng
+- Phễu bán hàng
+- Doanh thu số
+- Bán template
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: ban-hang
+maps_to: K3

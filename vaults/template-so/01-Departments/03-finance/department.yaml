@@ -1,0 +1,50 @@
+code: 03-finance
+name_vn: Tài chính & Kế toán
+tier: 2
+description: Phòng Tài chính & Kế toán — canh unit-econ template biên gần 100% (không COGS biến-đổi), giữ cổng contribution-margin/đơn dương làm phanh trước khi scale ads, so phí chợ quốc-tế (Etsy/Gumroad) với landing riêng + SePay ~0%, và xử-lý thuế sản-phẩm số theo luật VN (MẪU, cần chuyên-gia rà).
+agents:
+- cfo
+- accountant
+- financial-analyst
+default_speaker: cfo
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - kế toán
+  - phiếu thu chi
+  - hạch toán
+  - thuế sản phẩm số
+  - thuế SP số
+  - GTGT 5%
+  - TNCN 2%
+  - hóa đơn điện tử
+  - phí cổng thanh toán
+  - SePay
+  agent: accountant
+- keywords:
+  - phân tích
+  - báo cáo tc
+  - unit economics
+  - contribution margin
+  - biên lợi nhuận
+  - phí chợ quốc tế
+  - Etsy fee
+  - Gumroad fee
+  - giá hero template
+  - order bump
+  agent: financial-analyst
+aliases_vn:
+- Phòng Tài chính
+- Tài chính
+- Kế toán
+- Finance
+- Unit-econ template
+- Contribution margin
+- Phanh biên lợi nhuận
+- Thuế sản phẩm số
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: tai-chinh
+maps_to: K2

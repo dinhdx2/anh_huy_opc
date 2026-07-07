@@ -1,0 +1,45 @@
+code: 05-operations
+name_vn: Hành chính & Vận hành
+tier: 2
+description: Phòng Hành chính & Vận hành — dựng pipeline giao template tự-động có kiểm-soát (link cá-nhân-hóa, watermark, khóa "make a copy", chống tải lậu), quản nhà-cung-cấp asset/font/ảnh có license + công-cụ thiết-kế (Canva/Notion) và vận-hành đơn số cho DN bán template số tiếng Việt.
+agents:
+- ops-manager
+- vendor-manager
+- office-admin
+default_speaker: ops-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - giao template tự động
+  - watermark
+  - chống lậu
+  - chống tải lậu
+  - khóa make a copy
+  - link cá nhân hóa
+  - pipeline giao hàng số
+  - fulfillment đơn số
+  agent: ops-manager
+- keywords:
+  - nhà cung cấp asset
+  - license font
+  - license ảnh
+  - kho asset
+  - công cụ thiết kế
+  - canva pro
+  - freelancer thiết kế
+  agent: vendor-manager
+aliases_vn:
+- Phòng Vận hành
+- Vận hành
+- Operations
+- Ops
+- Hành chính
+- Vận hành số
+- Fulfillment
+- Giao hàng số
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: van-hanh
+maps_to: K5

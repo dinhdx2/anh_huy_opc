@@ -1,0 +1,25 @@
+code: 10-training
+name_vn: Đào tạo & Phát triển
+tier: 4
+description: "Phòng Đào tạo & Phát triển — với DN template/asset số GĐ1 (solo founder / đội cực nhỏ): đào-tạo nội-bộ NHẸ để founder tự nâng kỹ-năng làm template (Google Sheet/Excel/Canva/Notion) + chạy ads tripwire; curate know-how sản-xuất template và quy-trình kiểm bản-quyền thành SOP/tài-liệu tái-dùng, chống mất know-how khi thuê freelancer."
+agents:
+- training-lead
+- mentor
+- knowledge-curator
+default_speaker: training-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Đào tạo
+- Đào tạo
+- Training
+- L&D
+- Tự nâng kỹ-năng
+- Nâng năng-lực founder
+- Đào tạo nội-bộ
+- Know-how làm template
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: dao-tao
+maps_to: K6

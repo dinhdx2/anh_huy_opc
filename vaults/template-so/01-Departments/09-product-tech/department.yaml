@@ -1,0 +1,56 @@
+code: 09-product-tech
+name_vn: Sản phẩm & Công nghệ
+tier: 4
+description: Phòng Sản phẩm & Công nghệ — DN bán template/asset số tiếng Việt (GĐ1 validate). "Sản-phẩm" chính LÀ template số; phòng lo (a) hạ-tầng GIAO template tự-động có kiểm-soát — landing bán, cổng thanh-toán VN (SePay/PayOS), link tải cá-nhân-hóa + watermark, webhook giao-hàng-sau-thanh-toán; (b) bảo-mật — secret/API key KHÔNG để trong repo (bài-học ngành), chống lộ file gốc/bản-quyền, tuân NĐ 13/2023 khi xử-lý email/Zalo; (c) backlog template theo tín-hiệu bán + versioning/cập-nhật. GĐ1 ưu-tiên hạ-tầng đủ-dùng, đo-được, không over-engineer.
+agents:
+- product-manager
+- tech-lead
+- security-officer
+default_speaker: product-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - security
+  - bảo mật
+  - vuln
+  - secret
+  - lộ key
+  - rò rỉ key
+  - bản quyền
+  - chống tải lậu
+  agent: security-officer
+- keywords:
+  - tech
+  - kỹ thuật
+  - infra
+  - landing
+  - cổng thanh toán
+  - sepay
+  - payos
+  - webhook giao hàng
+  - link tải
+  - watermark
+  - giao hàng tự động
+  agent: tech-lead
+- keywords:
+  - backlog template
+  - roadmap
+  - versioning
+  - cập nhật template
+  - tín hiệu bán
+  agent: product-manager
+aliases_vn:
+- Phòng Sản phẩm Công nghệ
+- Sản phẩm
+- Công nghệ
+- Product
+- Tech
+- Engineering
+- Hạ tầng giao SP số
+- Giao hàng số
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: san-pham-cong-nghe
+maps_to: K4

@@ -1,0 +1,43 @@
+code: 04-people
+name_vn: Nhân sự & Con người
+tier: 2
+description: Phòng Nhân sự & Con người — GĐ1 lo cơ-cấu tinh gọn (solo founder / nhóm nhỏ) và thuê freelance thiết-kế template, video hướng-dẫn, viết bài theo việc thay vì tuyển full-time sớm cho DN bán template số tiếng Việt.
+agents:
+- hr-manager
+- recruiter
+- training-coordinator
+default_speaker: hr-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - tuyển dụng
+  - jd
+  - phỏng vấn
+  - freelancer thiết kế
+  - thuê freelance
+  - cộng tác viên
+  - thuê ngoài theo việc
+  - hợp đồng dịch vụ freelance
+  agent: recruiter
+- keywords:
+  - đào tạo
+  - training
+  - onboarding freelancer
+  - brief cộng tác viên
+  - hướng dẫn quy trình template
+  agent: training-coordinator
+aliases_vn:
+- Phòng Nhân sự
+- Nhân sự
+- HR
+- People
+- Con người
+- Đội ngũ
+- People Ops
+- Nhân lực & cộng tác viên
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: nhan-su
+maps_to: K6

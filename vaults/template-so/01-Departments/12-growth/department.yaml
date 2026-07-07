@@ -1,0 +1,23 @@
+code: 12-growth
+name_vn: Tăng trưởng & Đầu tư
+tier: 5
+description: "Phòng Tăng trưởng & Đầu tư — với DN template/asset số GĐ1: sau khi có tín-hiệu, mở-rộng SP số (thêm SKU/bundle, niêm-yết chợ quốc-tế Etsy/Creative Market/Gumroad, viral loop template FREE lan qua Zalo/Pinterest) trên nền biên ~95–100%; fundraising ở GĐ1 thường BOOTSTRAP — gọi vốn CHƯA cấp-thiết, chỉ nêu đúng bối-cảnh và điều-kiện đủ để bàn sau."
+agents:
+- growth-strategist
+- fundraising-lead
+default_speaker: growth-strategist
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Tăng trưởng
+- Tăng trưởng
+- Growth
+- Đầu tư
+- Gọi vốn
+- Mở SKU/bundle
+- Viral loop
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: tang-truong
+maps_to: K1

@@ -1,0 +1,44 @@
+code: 08-customer
+name_vn: Khách hàng & Dịch vụ
+tier: 3
+description: Phòng Khách hàng & Dịch vụ — DN bán template/asset số tiếng Việt (GĐ1 validate). Trọng tâm — hỗ-trợ khách DÙNG template ("tải-về-là-chạy" — mở/sao Google Sheet, chỉnh Canva, dùng Notion; KHÔNG phải hỗ-trợ SaaS), xử refund SP số bằng bằng-chứng giao-hàng (log tải, link cá-nhân-hóa, watermark) để giảm tranh-chấp trên chợ/cổng thanh-toán, và giữ-chân bằng cập-nhật template định-kỳ + cộng-đồng người dùng (Zalo/Facebook Group). Tuân Luật Bảo vệ người tiêu dùng + NĐ 13/2023 khi xử-lý dữ-liệu email/Zalo khách.
+agents:
+- cs-lead
+- support-tier1
+- retention-officer
+default_speaker: cs-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - hỗ trợ
+  - support
+  - hướng dẫn dùng
+  - dùng template
+  - refund
+  - hoàn tiền
+  - đổi trả
+  - link tải
+  - tải lại
+  agent: support-tier1
+- keywords:
+  - giữ chân
+  - retention
+  - churn
+  - loyalty
+  - win-back
+  - cập nhật template
+  - cộng đồng
+  agent: retention-officer
+aliases_vn:
+- Phòng Chăm sóc Khách hàng
+- Khách hàng
+- CSKH
+- CS
+- Dịch vụ khách hàng
+- Hỗ trợ
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: khach-hang
+maps_to: K3

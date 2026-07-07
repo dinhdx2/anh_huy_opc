@@ -1,0 +1,21 @@
+code: 13-content-ip
+name_vn: Sản xuất Nội dung số & Bản quyền
+tier: 4
+description: "Phòng Sản xuất Nội dung số & Bản quyền — TRỌNG-TÂM của DN template/asset số: pipeline làm/đóng-gói template (Google Sheet/Excel, Canva, Notion) \"tải về là chạy\", CỔNG BẢN-QUYỀN TRƯỚC PHÁT-HÀNH (kiểm license MỌI asset đầu-vào: font/ảnh/icon/Canva element/raw AI output), chống tải lậu, versioning & cập-nhật template. Đây là phòng đặc-thù nhất — ràng-buộc bản-quyền asset là rủi-ro sống-còn (takedown/khóa account)."
+agents:
+- content-ip-lead
+default_speaker: content-ip-lead
+refs_folder: refs/
+depends_on:
+- 09-product-tech
+- 01-governance
+- 07-marketing
+aliases_vn:
+- Phòng Nội dung số & Bản quyền
+- Content & IP
+- Sản xuất nội dung số
+- Bản quyền
+- IP
+- License asset
+- Làm template
+- Đóng gói template

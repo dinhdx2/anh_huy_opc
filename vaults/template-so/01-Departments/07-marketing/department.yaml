@@ -1,0 +1,57 @@
+code: 07-marketing
+name_vn: Marketing & Thương hiệu
+tier: 3
+description: Phòng Marketing & Thương hiệu — DN bán template/asset số tiếng Việt (GĐ1 validate, pre-launch, doanh-thu 0đ). Trọng tâm — paid-led tripwire (hero template 99–199k + order-bump) trên FB/TikTok Ads, bổ-trợ chợ Etsy/Creative Market/Gumroad + Pinterest/TikTok organic bằng ảnh MOCKUP template (quyết mua trong 3–5s) và video hướng-dẫn ngắn, SEO tối-ưu listing chợ + pin, và bản-địa-hóa thương-hiệu "tải-về-là-chạy" tiếng Việt. Phanh lãi thật là contribution-margin/đơn (KHÔNG lấy ROAS-từ-biên-100% làm tín-hiệu lãi). Tuân Luật Quảng cáo 16/2012 (cấm claim sai sự-thật kiểu "đảm-bảo x10 doanh-thu") + NĐ 13/2023 khi thu email/Zalo.
+agents:
+- brand-manager
+- content-creator
+- ads-specialist
+- seo-specialist
+default_speaker: brand-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - ads
+  - quảng cáo
+  - fb
+  - google
+  - campaign
+  - tripwire
+  - tripwire ads
+  - order-bump
+  - roas
+  - tiktok ads
+  - media buy
+  agent: ads-specialist
+- keywords:
+  - seo
+  - rank
+  - organic
+  - listing chợ
+  - etsy
+  - creative market
+  - gumroad
+  - pinterest
+  - pin
+  agent: seo-specialist
+- keywords:
+  - content
+  - viết bài
+  - editorial
+  - mockup
+  - mockup template
+  - ảnh mockup
+  - video hướng dẫn
+  agent: content-creator
+aliases_vn:
+- Phòng Marketing
+- Marketing
+- MKT
+- Truyền thông
+- Quảng bá
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: marketing
+maps_to: K3

@@ -1,0 +1,25 @@
+code: 11-reporting
+name_vn: Báo cáo & Đo lường
+tier: 4
+description: "Phòng Báo cáo & Đo lường — với DN template/asset số GĐ1: dựng dashboard 5 KPI validate (CM/đơn, CAC, CR landing, refund%, email+Zalo thu được) theo 1-nguồn-sự-thật; đo tín-hiệu SP số nào (SKU/bundle) thật-sự chạy để CEO quyết mở/đóng, không để vanity metrics đánh lừa khi doanh-thu còn mỏng."
+agents:
+- data-analyst
+- dashboard-designer
+default_speaker: data-analyst
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Báo cáo
+- Báo cáo
+- Reporting
+- BI
+- Analytics
+- Đo lường
+- Dashboard
+- KPI
+- Số liệu bán hàng
+# Tên-kép tầng phòng (luồng generic v3, spec 04 §4.3): aliases_vn = tên-ngành; capability_name = tên-năng-lực-chuẩn (khóa tra KHO); maps_to = neo canonical 7 khối.
+capability_name: bao-cao
+maps_to: K7
