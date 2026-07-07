@@ -1,0 +1,23 @@
+BANG 1 - MO HINH CAC BREAK-EVEN THEO 3 KICH BAN (don vi: VND tru khi ghi %),,,
+Khoan muc,Base,Bull,Bear
+Gia ban hero (P),149000,179000,149000
+Ty le hoan tien (refund %) [benchmark nganh - can CEO xac minh],5%,3%,8%
+Ty le khach mua kem order-bump (attach rate %) [benchmark nganh - can CEO xac minh],35%,40%,30%
+Gia order-bump (mau thue khoan TT40/ton kho) [benchmark - can CEO xac minh gia that],69000,79000,49000
+AOV = P + attach% x gia bump,173150,210600,163700
+Phi cong SePay (% doanh thu; chuyen khoan ngan hang ~0%; Bear du phong phi phat sinh ngoai nguong mien phi) [benchmark - can CEO xac minh],0%,0%,0.3%
+Thue khoan GTGT 5% + TNCN 2% = 7% doanh thu thuc nhan [MAU - can ke toan ra soat],7%,7%,7%
+Doanh thu sau hoan tien = AOV x (1 - refund%),164493,204282,150604
+Tien thue = 7% x doanh thu sau hoan tien,11514,14300,10542
+Tien phi cong = %phi x doanh thu sau hoan tien,0,0,452
+CM/don TRUOC ads = doanh thu sau hoan tien - thue - phi cong,152978,189982,139610
+CAC BREAK-EVEN (chi ads toi da/don de CM/don = 0),152978,189982,139610
+,,,
+BANG 2 - BANG NHAY: CAC THUC x GIA BAN -> CM/DON (gia dinh nen Base: refund 5%; attach 35%; gia bump 69000; thue 7%; phi cong 0%),,,
+CAC thuc/don (VND),CM/don @ gia 149000 (VND),Dau hieu (gia 149k),CM/don @ gia 179000 (VND),Dau hieu (gia 179k)
+100000,52978,DUONG (+),79483,DUONG (+)
+200000,-47022,AM (-),-20517,AM (-)
+300000,-147022,AM (-),-120517,AM (-)
+400000,-247022,AM (-),-220517,AM (-)
+,,,
+Ghi chu: CAC breakeven gia 149000 (dung gia dinh Base) = 152978; CAC breakeven gia 179000 (dung gia dinh Base) = 179483 - dung de doi chieu 2 dong tren.,,,

@@ -1,0 +1,38 @@
+KHU VỰC A — CÔNG THỨC & HƯỚNG DẪN CỘT (đọc trước khi dùng bảng B),,
+Cột,Ý nghĩa,Công thức
+Tồn đầu kỳ,Số lượng tồn kho có sẵn tại đầu kỳ (ngày/tuần/tháng) — bằng Tồn cuối kỳ của kỳ liền trước,= Tồn cuối kỳ (kỳ trước)
+Nhập trong kỳ,Số lượng nhập thêm từ nhà cung cấp/xưởng trong kỳ này,Nhập tay theo phiếu nhập/hóa đơn
+Xuất bán TikTok Shop,Số lượng đã bán ra qua kênh TikTok Shop trong kỳ,Lấy từ báo cáo đơn hàng TikTok Shop Seller Center
+Xuất bán Shopee,Số lượng đã bán ra qua kênh Shopee trong kỳ,Lấy từ báo cáo đơn hàng Shopee Seller Center
+Xuất bán kênh khác,"Số lượng bán qua kênh khác (Facebook, tại quầy, Lazada...)",Nhập tay theo sổ bán hàng
+Tổng xuất trong kỳ,Tổng số lượng đã xuất bán tất cả kênh trong kỳ,= Xuất TikTok Shop + Xuất Shopee + Xuất kênh khác
+Tồn cuối kỳ,Số lượng còn lại trong kho sau khi trừ hàng đã bán,= Tồn đầu kỳ + Nhập trong kỳ − Tổng xuất trong kỳ
+Ngưỡng cảnh báo tối thiểu,Mức tồn kho thấp nhất chấp nhận được trước khi phải đặt nhập thêm (tự đặt theo tốc độ bán trung bình × thời gian chờ hàng về),Tự nhập theo kinh nghiệm bán hàng — gợi ý = (bán trung bình/ngày) × (số ngày chờ nhập hàng + 3-5 ngày dự phòng)
+Trạng thái cảnh báo,Đèn cảnh báo tự động theo Tồn cuối kỳ so với Ngưỡng cảnh báo,"= NẾU(Tồn cuối kỳ = 0; ""HẾT HÀNG - DỪNG BÁN""; NẾU(Tồn cuối kỳ <= Ngưỡng cảnh báo; ""SẮP HẾT - CẦN NHẬP THÊM""; ""Còn hàng""))"
+,,
+KHU VỰC B — BẢNG TỒN KHO THEO SẢN PHẨM (điền số thật — mỗi dòng 1 SP/1 kỳ),,,,,,,,,,
+Mã SP,Tên sản phẩm,Đơn vị tính,Kỳ (ngày/tuần/tháng),Tồn đầu kỳ,Nhập trong kỳ,Xuất bán TikTok Shop,Xuất bán Shopee,Xuất bán kênh khác,Tổng xuất trong kỳ,Tồn cuối kỳ,Ngưỡng cảnh báo tối thiểu,Trạng thái cảnh báo,Ghi chú
+,,,,,,,,,,,,,[điền số thật SP của bạn]
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+KHU VỰC C — VÍ DỤ MINH HỌA (SỐ GIẢ ĐỊNH — chỉ để hiểu cách dùng bảng),,,,,,,,,,,,,
+Mã SP,Tên sản phẩm,Đơn vị tính,Kỳ,Tồn đầu kỳ,Nhập trong kỳ,Xuất bán TikTok Shop,Xuất bán Shopee,Xuất bán kênh khác,Tổng xuất trong kỳ,Tồn cuối kỳ,Ngưỡng cảnh báo tối thiểu,Trạng thái cảnh báo,Ghi chú
+SP001,Áo thun trơn size M (ví dụ),Cái,Tuần 1,50,0,12,8,0,20,30,15,Còn hàng,Bán đều 2 kênh
+SP001,Áo thun trơn size M (ví dụ),Cái,Tuần 2,30,0,10,9,0,19,11,15,SẮP HẾT - CẦN NHẬP THÊM,Cảnh báo tự động vì 11 <= ngưỡng 15
+SP002,Ốp lưng điện thoại mẫu A (ví dụ),Cái,Tuần 1,20,0,15,5,0,20,0,10,HẾT HÀNG - DỪNG BÁN,Cần nhập gấp — đã dừng nhận đơn kênh TikTok Shop
+,,,,,,,,,,,,,
+GHI CHÚ QUAN TRỌNG,,,,,,,,,,,,,
+"Bảng này quản lý tồn kho HÀNG HÓA VẬT LÝ mà nhà bán online kinh doanh (KHÔNG liên quan tồn kho ""template số"" — template số là file, không giới hạn số lượng bán). Dùng kèm hero (Sheet đối-soát lãi đa-sàn) để vừa biết LÃI vừa biết CÒN HÀNG hay không, tránh nhận đơn khi hết hàng gây hủy đơn/tụt điểm shop trên TikTok Shop và Shopee.",,,,,,,,,,,,,
