@@ -3,7 +3,7 @@
 > Khởi tạo 2026-07-07 (onboard). ✅ = đề-xuất · 🔹 = CEO chốt.
 
 ## Hiện trạng
-[cần CEO xác minh]. Giả-định: **solo founder** hoặc **nhóm nhỏ**, founder kiêm nhiều vai (thiết-kế template + marketing + bán + CSKH).
+**Solo founder — TỰ LÀM (CEO chốt 2026-07-07).** Founder tự sản-xuất hero (Google Sheet nghiệp-vụ) → **KHÔNG cần thuê thiết-kế ở GĐ1**; kiêm luôn marketing + bán + CSKH. 🔹 Còn cần xác-minh: **thời-gian/tuần** dành cho dự-án (chưa khai).
 
 ## Vai trò cốt-lõi cho template số (✅ — giai-đoạn đầu 1 người kiêm)
 - **Thiết-kế/sản-xuất template** (Sheet/Canva/Notion) + **cổng bản-quyền** — thứ đem bán, quan-trọng nhất.
