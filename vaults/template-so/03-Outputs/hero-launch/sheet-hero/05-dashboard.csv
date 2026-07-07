@@ -1,0 +1,30 @@
+TỔNG HỢP THEO NGÀY,,
+Ngay,Tong_doanh_thu_VND,Tong_lai_that_VND,Bien_pct
+01/07/2026,"=SUMIF('04-lai-that'!$B$2:$B$9,A3,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$B$2:$B$9,A3,'04-lai-that'!$P$2:$P$9)","=IF(B3=0,0,C3/B3)"
+02/07/2026,"=SUMIF('04-lai-that'!$B$2:$B$9,A4,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$B$2:$B$9,A4,'04-lai-that'!$P$2:$P$9)","=IF(B4=0,0,C4/B4)"
+03/07/2026,"=SUMIF('04-lai-that'!$B$2:$B$9,A5,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$B$2:$B$9,A5,'04-lai-that'!$P$2:$P$9)","=IF(B5=0,0,C5/B5)"
+04/07/2026,"=SUMIF('04-lai-that'!$B$2:$B$9,A6,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$B$2:$B$9,A6,'04-lai-that'!$P$2:$P$9)","=IF(B6=0,0,C6/B6)"
+,,
+TỔNG HỢP THEO SẢN PHẨM (SKU),,
+SKU_San_pham,Tong_doanh_thu_VND,Tong_lai_that_VND,Bien_pct
+AO-THUN-DEN-M,"=SUMIF('04-lai-that'!$D$2:$D$9,A10,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$D$2:$D$9,A10,'04-lai-that'!$P$2:$P$9)","=IF(B10=0,0,C10/B10)"
+QUAN-JEAN-29,"=SUMIF('04-lai-that'!$D$2:$D$9,A11,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$D$2:$D$9,A11,'04-lai-that'!$P$2:$P$9)","=IF(B11=0,0,C11/B11)"
+VAY-HOA-S,"=SUMIF('04-lai-that'!$D$2:$D$9,A12,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$D$2:$D$9,A12,'04-lai-that'!$P$2:$P$9)","=IF(B12=0,0,C12/B12)"
+GIAY-SNEAKER-40,"=SUMIF('04-lai-that'!$D$2:$D$9,A13,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$D$2:$D$9,A13,'04-lai-that'!$P$2:$P$9)","=IF(B13=0,0,C13/B13)"
+,,
+TỔNG HỢP THEO SÀN,,
+San,Tong_doanh_thu_VND,Tong_lai_that_VND,Bien_pct
+TikTok Shop,"=SUMIF('04-lai-that'!$C$2:$C$9,A17,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$C$2:$C$9,A17,'04-lai-that'!$P$2:$P$9)","=IF(B17=0,0,C17/B17)"
+Shopee,"=SUMIF('04-lai-that'!$C$2:$C$9,A18,'04-lai-that'!$E$2:$E$9)","=SUMIF('04-lai-that'!$C$2:$C$9,A18,'04-lai-that'!$P$2:$P$9)","=IF(B18=0,0,C18/B18)"
+,,
+TOP SẢN PHẨM (dựa trên bảng THEO SẢN PHẨM ở dòng 10-13 phía trên),,
+Hang_muc,SKU,Tong_lai_that_VND,Ghi_chu
+Top 1 - Lãi nhiều nhất,"=INDEX($A$10:$A$13,MATCH(MAX($C$10:$C$13),$C$10:$C$13,0))",=MAX($C$10:$C$13),
+Top 2 - Lãi nhiều nhì,"=INDEX($A$10:$A$13,MATCH(LARGE($C$10:$C$13,2),$C$10:$C$13,0))","=LARGE($C$10:$C$13,2)",
+SP lãi/biên THẤP NHẤT - cần chú ý,"=INDEX($A$10:$A$13,MATCH(MIN($C$10:$C$13),$C$10:$C$13,0))",=MIN($C$10:$C$13),"Trong dữ liệu mẫu chưa có SP nào LỖ — đây là SP có LÃI THẤP NHẤT trong kỳ, nên xem lại giá bán/ads/phí ship cho SP này. Nếu có SP thật sự LỖ (số âm), dòng này sẽ TỰ hiện ra số âm."
+,,
+TỔNG ADS SO VỚI TỔNG LÃI THẬT (TOÀN KỲ),,
+Chi_tieu,Gia_tri_VND,Ghi_chu
+Tổng Ads phân bổ,=SUM('04-lai-that'!$K$2:$K$9),
+Tổng LÃI THẬT,=SUM('04-lai-that'!$P$2:$P$9),
+Tỷ lệ Ads / Lãi thật (%),"=IF(B29=0,0,B28/B29)","Càng THẤP càng tốt — nếu >50% nghĩa là ads đang ăn quá nửa lợi nhuận thật, cần xem lại target/ROAS theo từng SP ở bảng trên"

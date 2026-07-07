@@ -5,6 +5,8 @@
 
 ## NHÓM A — LÀM NGAY (không tốn vốn · AI-AUTO / máy làm được)
 
+> ✅ **ĐÃ BUILD XONG 2026-07-07** → `03-Outputs/hero-launch/` (xem `README.md` gói). Tự-kiểm: công-thức hero & CAC khớp Python 100%; landing 0 asset ngoài; cổng bản-quyền hero+order-bump PASS. 3 điểm cần chuyên-gia rà: thuế khách 1,5% vs BộMẫu 7% · luật dữ-liệu NĐ13→L91/2025 · ngưỡng thuế 2026.
+
 | # | Hành động | Người/phòng | Deliverable (03-Outputs) | KPI/nghiệm-thu |
 |---|---|---|---|---|
 | A1 | **Xây hero Google Sheet đối-soát & lãi-thật đa-sàn** (tabs: nhập đơn · cấu-hình phí sàn · đối-soát · lãi-thật/đơn · dashboard) | 13-content-ip / 09 | spec + CSV từng tab + công-thức + hướng-dẫn dùng | mở là chạy: nhập đơn mẫu → ra lãi thật/đơn đúng; tính đủ phí sàn+thanh-toán+COD+ads+giá-vốn+thuế |

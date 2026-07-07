@@ -11,7 +11,8 @@
 - **ICP:** nghiêng nhà-bán đang làm nghiêm-túc/đang scale. **Canva & Notion HOÃN** (upsell sau cổng PMF).
 - **CỔNG NO-GO CỨNG (chưa qua):** CEO **CHƯA khai vốn/trần-burn** (budget.md) + thời-gian/kỹ-năng founder (headcount.md) → **chưa được chi 1 đồng ads**. Đây là việc cần CEO làm TRƯỚC.
 - **Việc còn treo (từ report):** dựng bảng CAC break-even 3 kịch-bản (Tài-chính) · xác-minh nguồn số người-bán 2025 trước khi khóa ICP · rút gọn tên hero cho hook · ai làm content nếu mở kênh chợ.
-- **Bước tiếp:** **PHA 1** (`/vn-run` sinh cây việc ra-mắt hero) hoặc `/vn-execute` sau khi CEO khai vốn. Chi-tiết: `07-decision-report.md`.
+- **✅ Nhóm A (không tốn vốn) ĐÃ BUILD 2026-07-07** → `03-Outputs/hero-launch/`: hero Sheet 5-tab · order-bump TT40/tồn-kho · landing.html · cổng bản-quyền (PASS) · privacy · giao-hàng chống lậu · CAC break-even. Còn Nhóm B (ads/SHTT/thuế) GÁC.
+- **Bước tiếp:** CEO/chuyên-gia rà 3 điểm (thuế khách 1,5% vs BộMẫu 7% · luật dữ-liệu NĐ13→L91/2025 · ngưỡng thuế) → dựng bản Sheet thật (.gsheet) + deploy landing → CFO chốt trần-burn → chạy ads test. Chi-tiết: `08-execution-plan.md` + `03-Outputs/hero-launch/README.md`.
 
 ## Giai đoạn (phát-hiện động — KHÔNG mặc-định)
 `stage: GĐ1` — vòng-đời 6 GĐ (luồng generic v3).

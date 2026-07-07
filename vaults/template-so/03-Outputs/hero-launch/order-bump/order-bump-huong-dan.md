@@ -1,6 +1,6 @@
 # Hướng dẫn dùng Order-bump: Mẫu thuế khoán TT40 + Bảng tồn-kho (+49–79k)
 
-> **TL;DR:** Order-bump gồm 2 file Sheet/CSV bán kèm hero (+49–79k): (1) tự tính thuế khoán GTGT 5% + TNCN 2% theo Thông tư 40/2021/TT-BTC cho người bán online, (2) quản tồn-kho đơn-giản đa-kênh TikTok Shop/Shopee. Cả hai là **MẪU tham-khảo**, khách hàng (và cả BộMẫu khi tự kê-khai thuế) **PHẢI có kế-toán có chứng-chỉ hành-nghề rà lại trước khi kê-khai/nộp thuế thật** — không dùng số ra từ bảng này để nộp thuế trực-tiếp mà không kiểm-tra.
+> **TL;DR:** Order-bump gồm 2 file Sheet/CSV bán kèm hero (+49–79k): (1) tự tính thuế khoán TT40/2021 cho người bán online — **mặc-định nhóm HÀNG HÓA (GTGT 1% + TNCN 0,5% = 1,5%)** đúng với nhà bán TikTok Shop/Shopee (khớp bộ Sheet lãi-thật/hero), có tùy-chọn nhóm **DỊCH VỤ (5%+2%)**; (2) quản tồn-kho đơn-giản đa-kênh. Cả hai là **MẪU tham-khảo**, khách hàng **PHẢI có kế-toán có chứng-chỉ hành-nghề rà lại trước khi kê-khai/nộp thật**. ⚠️ **Phân-biệt:** bảng này tính thuế của **KHÁCH** (nhà bán hàng-hóa = 1,5%); còn thuế của **chính BộMẫu** khi bán template số = **dịch-vụ 5%+2%** (nhóm khác — xem mô-hình CAC `../tai-chinh/`).
 
 ---
 
@@ -13,7 +13,7 @@ Order-bump = ưu-đãi thêm hiện ngay tại trang thanh-toán (checkout) khi 
 ## 2. Nội-dung 2 file
 
 ### a) `tt40-tinh-thue-khoan.csv` — Bảng tự tính thuế khoán
-- **Khu-vực A:** căn-cứ pháp-lý + công-thức (Thuế GTGT = Doanh-thu-tính-thuế × 5%; Thuế TNCN = Doanh-thu-tính-thuế × 2%; nhóm ngành = "dịch-vụ" vì bán template số qua landing riêng, không phải "hàng-hóa").
+- **Khu-vực A:** căn-cứ pháp-lý + **chọn nhóm ngành** (mặc-định **"hàng-hóa"** cho nhà bán TikTok Shop/Shopee → Thuế GTGT = Doanh-thu × **1%**, TNCN = Doanh-thu × **0,5%**; đổi sang **"dịch-vụ"** → 5% + 2% nếu khách bán dịch-vụ). Công-thức `=IF(nhóm="hàng hóa";…)` tự đổi tỷ-lệ. *(Đây là nhóm của thứ KHÁCH bán — hàng-hóa vật-lý; khác với BộMẫu bán template số = dịch-vụ.)*
 - **Khu-vực B:** bảng điền theo tháng — khách nhập doanh-thu thật, cột còn lại tự tính theo công-thức (mở trong Google Sheet để công-thức chạy tự-động: `=SUM()`, `=IF()`...).
 - **Khu-vực C:** ví-dụ minh-hoạ bằng số giả-định (không phải số thật) để hiểu cách tính trước khi điền số thật.
 - **Ngưỡng miễn thuế:** ghi rõ ngưỡng cũ (100 triệu đ/năm, áp-dụng đến hết 2025) và tình-trạng **đang biến-động mạnh trong 2025–2026** (Quốc-hội/Chính-phủ điều-chỉnh nhiều lần: 200tr → 500tr → có nguồn ghi 1 tỷ đ/năm từ 1/1/2026) — gắn rõ `[cần kế-toán xác minh ngưỡng chính-xác đang áp-dụng]` vì đây là quy-định rất mới, chưa thống-nhất giữa các nguồn tại thời-điểm soạn tài-liệu (2026-07-07).
