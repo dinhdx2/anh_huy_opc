@@ -3,10 +3,11 @@
 > Khởi tạo 2026-07-07 (onboard). 🔹 = CEO điền số thật · ✅ = khung đề-xuất.
 > Grounding: chưa có số thật DN → phần lớn là [cần CEO xác minh]. Căn-cứ thuế là MẪU — cần kế-toán/luật-sư rà.
 
-## Vốn & dòng tiền (🔹 CEO khai)
-- **Founder:** [cần CEO xác minh] — thời-gian (toàn/bán), vốn tổng (để CFO tính runway), thế-mạnh.
-- **Trần burn GĐ validate:** [cần CEO chốt] — đề-xuất khung nhỏ (vd 5–20tr/tháng) cho 4–6 tuần test trước PMF, KHÔNG vượt khi contribution-margin/đơn chưa dương.
-- **Mô hình chi:** chi chính = **ads (paid-led)** + công-cụ thiết-kế/AI + nền-tảng/thanh-toán.
+## Vốn & dòng tiền (CEO cập-nhật 2026-07-07)
+- **Founder:** solo, **tự sản-xuất hero (Google Sheet)** → chi sản-xuất ~0. 🔹 thời-gian/tuần chưa khai.
+- **Vốn cho test:** **CEO xác-nhận LO ĐỦ cho giai-đoạn test ra kết-quả** (2026-07-07) → **cổng NO-GO vốn: GỠ** cho việc chuẩn-bị. Số **trần-burn/tháng cụ-thể** chốt với CFO **khi vào lô ads test** (để áp kỷ-luật đợt) — chưa cần cho phần KHÔNG tốn ads.
+- **Thứ-tự chi (CEO chốt):** làm **phần không cần vốn TRƯỚC** (hero Sheet · cổng bản-quyền · landing · phễu thu email/Zalo · privacy) → CHỈ chi ads SAU khi phần này xong + CFO chốt trần-burn.
+- **Mô hình chi:** chi chính = **ads (paid-led)** + công-cụ (Google Sheet/landing ~free–thấp) + nền-tảng/thanh-toán (SePay ~0%).
 
 ## Cơ cấu chi-phí dự-kiến (✅ đề-xuất, 🔹 CEO chốt)
 | Khoản | Ví-dụ | Mức gợi-ý/tháng (VND) |

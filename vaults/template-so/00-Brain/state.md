@@ -25,7 +25,7 @@
 | # | Việc | Ghi chú |
 |---|---|---|
 | 1 | ✅ Chốt **ngách + hero** = Sheet đối-soát/lãi-thật đa-sàn 149–179k, order-bump TT40 | XONG (07-decision-report, CEO duyệt 2026-07-07) |
-| 1b | 🔹 **CEO khai vốn/trần-burn + thời-gian/kỹ-năng founder** (cổng NO-GO trước ads) | **CHƯA** — chặn cứng bước 5 |
+| 1b | ✅ **Vốn test:** CEO lo đủ (2026-07-07) · founder tự làm Sheet | cổng NO-GO **GỠ** cho phần chuẩn-bị; trần-burn/tháng chốt với CFO khi vào ads |
 | 2 | Làm **hero template 99–199k** | qua **checklist bản-quyền** (no Canva Pro/raw-AI, font/ảnh có license) |
 | 3 | Dựng **landing + cổng thanh-toán VN** (SePay/PayOS/MoMo/ZaloPay) + **thu email/Zalo OA** | phễu + tài-sản sở-hữu |
 | 4 | **Privacy Policy/consent** (NĐ 13/2023) + giao-hàng có kiểm-soát (watermark/link cá-nhân-hóa) | trước khi thu data/bán |
