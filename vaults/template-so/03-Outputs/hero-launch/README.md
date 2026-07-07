@@ -5,14 +5,14 @@
 ## Bản-đồ deliverable
 | Thư mục | File | Vai trò | Trạng-thái |
 |---|---|---|---|
-| `sheet-hero/` | 5 CSV + `00-huong-dan` + `06-cong-thuc` | **HERO** — Sheet đối-soát & lãi-thật đa-sàn (nhập đơn→phí sàn→đối-soát→lãi-thật→dashboard) | ✅ tự-kiểm công-thức khớp 100% |
+| `sheet-hero/` | **`BoMau-DoiSoat-LaiThat-daSan.xlsx`** (SP THẬT — 6 tab, công-thức sống) + 5 CSV nguồn + `06-cong-thuc` | **HERO** — Sheet đối-soát & lãi-thật đa-sàn | ✅ mở lại sạch, công-thức khớp 100% |
 | `order-bump/` | `tt40-tinh-thue-khoan.csv` · `ton-kho-don-gian.csv` · hướng-dẫn | **ORDER-BUMP** (+49–79k) — tính thuế khoán + tồn-kho | ✅ sửa nhất-quán hàng-hóa 1,5% |
 | `landing/` | `landing.html` + README deploy | **LANDING** bán hero (tự-chứa, tuân Luật QC) | ✅ 0 asset ngoài |
 | `compliance/` | `cong-ban-quyen-checklist.md` · `privacy-policy.md` | **CỔNG bản-quyền** (hero+order-bump PASS) + Privacy | ✅ (xem cờ luật ↓) |
 | `giao-hang/` | `giao-hang-kiem-soat-spec.md` | Cơ-chế giao Sheet chống copy lậu | ✅ spec |
 | `tai-chinh/` | `cac-breakeven.csv` + diễn-giải | Mô-hình CAC break-even 3 kịch-bản | ✅ Base ~153k · Bull ~190k · Bear ~140k/đơn |
 | `pheu-email-zalo.md` | — | **Spec phễu** thu email/Zalo (khung 5 chạm + viral loop) | ✅ spec |
-| `pheu/lead-magnet/` | Sheet 1 sàn + hướng-dẫn | **Lead-magnet FREE** (mồi phễu, thuế 1,5%) | ✅ công-thức khớp 100% |
+| `pheu/lead-magnet/` | **`BoMau-LaiThat-1San-FREE.xlsx`** (3 tab) + CSV nguồn + hướng-dẫn | **Lead-magnet FREE** (mồi phễu, thuế 1,5%) | ✅ công-thức khớp 100% |
 | `pheu/nurture/` | `chuoi-nuoi-email-zalo.md` | **Copy 5 chạm** email/Zalo (dùng-được) | ✅ 0 vi-phạm Luật QC |
 | `pheu/ads/` | ad-copy · video-script · creative-direction | **6 bộ ad copy** FB/TikTok + 3 kịch-bản video | ✅ 0 vi-phạm Luật QC |
 
