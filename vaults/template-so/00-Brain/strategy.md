@@ -17,7 +17,7 @@ Bán **template / asset số** tiếng Việt cho cá-nhân & DN nhỏ tại **V
 
 ## Khách hàng mục tiêu (ICP) — ✅ đề-xuất (chốt ở /vn-run)
 - **Thị trường:** Việt Nam (cá-nhân & DN siêu-nhỏ, VND).
-- **NGÁCH gợi-ý:** **chủ shop mới TikTok Shop/Shopee** cần template quản-lý bán hàng dùng-được-ngay (bám xu-hướng TMĐT VN đang bùng-nổ). Dự-phòng: dân văn-phòng/SME cần template năng-suất/marketing.
+- **NGÁCH (ĐÃ CHỐT 2026-07-07):** **chủ shop TikTok Shop/Shopee** cần bộ Google Sheet **đối-soát & tính lãi thật** đa-sàn. ICP nghiêng **nhà-bán đang làm nghiêm-túc/đang scale** (không thuần "mới") — vì số shop 2025 giảm ~5,6% nhưng doanh-thu/shop tăng → thị-trường chuyên-nghiệp-hóa `[benchmark — cần CEO xác minh nguồn/kỳ]`. Dự-phòng nếu CAC quá cao: dân văn-phòng/SME cần template năng-suất/marketing.
 - **Nỗi-đau:** tự dựng Excel/Notion mất thời-gian, không biết bắt-đầu; cần mẫu chuẩn, tiếng Việt, chạy được ngay.
 
 ## USP / Lợi thế cạnh tranh — ✅ đề-xuất
@@ -28,7 +28,7 @@ Bán **template / asset số** tiếng Việt cho cá-nhân & DN nhỏ tại **V
 ## Go-to-market — ✅ đề-xuất: **PAID-LED có kỷ-luật** (brand mới, 0 audience)
 - **Lý-do:** brand mới → organic-first chậm; template giá thấp hợp **tripwire ads** (ROAS ~ngay do biên ~100%). 🔹 CEO xác-nhận có chạy ads không.
 - **Kỷ-luật (phanh Tài-chính):** ads THEO ĐỢT trong trần do CEO chốt; **cổng contribution-margin/đơn DƯƠNG** mới scale; CM âm → dừng sửa phễu/offer.
-- **Bổ-trợ chi-phí thấp:** niêm-yết trên **chợ (Etsy/Creative Market/Gumroad)** + **Pinterest/TikTok organic** để hứng discovery (chợ tự kéo khách, giảm phụ-thuộc ads) — nhưng dữ-liệu khách sở-hữu vẫn ở **landing riêng + Zalo OA**.
+- **Bổ-trợ chi-phí thấp (discovery, KHÔNG kênh chính):** **Gumroad/Payhip/Creative Market** + **Pinterest/TikTok organic** — chợ tự kéo khách, giảm phụ-thuộc ads. ⚠️ **Etsy loại khỏi ưu-tiên** (phí thực ~13–16%+ & không nhận seller từ VN — red-team 2026-07-07). Dữ-liệu khách sở-hữu vẫn ở **landing riêng + Zalo OA**.
 - **Bắt buộc song song:** thu **email list + Zalo OA** → biến traffic trả-phí thành tài-sản sở-hữu.
 - **Kênh bán chính:** **website/landing riêng + cổng VN** (SePay/PayOS/MoMo/ZaloPay) — sở-hữu dữ-liệu khách.
 

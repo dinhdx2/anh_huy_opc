@@ -13,13 +13,13 @@
 | Membership template | Thuê-bao nhận template mới định-kỳ | 49k–149k/tháng | Doanh-thu lặp (MRR); cần ra mẫu đều |
 | Digital planner / printable | Planner số, checklist in được | 59k–159k | Mở rộng sau; bán chợ quốc-tế được |
 
-**HERO (✅ đề-xuất — chốt ở /vn-run):** 1 bộ template tiếng Việt giải 1 nỗi-đau (gợi-ý: **"Bộ Google Sheet quản-lý bán hàng đa-sàn"** cho nhà bán mới, ~149–179k) + order-bump (bộ mở-rộng/bản Canva báo-cáo). Bán **paid-led tripwire** (xem `strategy.md` GTM).
+**HERO (✅ ĐÃ CHỐT — hội-đồng 6/6, CEO duyệt 2026-07-07):** **"Bộ Google Sheet đối-soát & tính LÃI THẬT đa-sàn TikTok Shop/Shopee" ~149–179k** — định-vị "biết lãi thật sau phí sàn/ads/COD" (né vùng free-Excel mà SaaS VN đã phủ). **Order-bump = mẫu thuế khoán TT40 / tồn-kho** (KHÔNG dùng Canva — rủi-ro bản-quyền + cùng job với hero). Canva/Notion HOÃN thành upsell sau cổng PMF. Bán **paid-led tripwire** (xem `strategy.md` GTM). *Chi-tiết: `02-Tasks/2026-07-07-1023-phan-tich-ngach-doi-thu/07-decision-report.md`.*
 
 > ⚠️ **Bản-quyền hero (cờ đỏ ngành template):** KHÔNG dùng **Canva Pro elements** trong file bán; KHÔNG bán **raw AI output** chưa qua chỉnh-sửa; font/ảnh/icon phải có **commercial license** rõ (Canva FREE / Google Fonts OFL / stock có license). Chưa rõ quyền → DỪNG phát-hành.
 
 ## Unit economics (✅ khung — 🔹 CEO chốt số thật khi có hero + giá)
 - **Giá bán (P):** [cần CEO xác minh — đề-xuất 149–199k]. Template giá thấp ~$10 (≈250k) bán tốt trên chợ; đơn có thể 1.000–3.000/listing `[benchmark ngành — cần CEO xác minh]`.
-- **Phí thanh-toán/nền-tảng:** **landing riêng + SePay ≈ 0%** (tiền vào thẳng TK ngân-hàng) `[benchmark — cần CEO xác minh khi đăng-ký]`; nếu bán chợ quốc-tế: Etsy ~6.5% + $0.20/listing, Gumroad ~10% `[benchmark ngành]`.
+- **Phí thanh-toán/nền-tảng:** **landing riêng + SePay ≈ 0%** (tiền vào thẳng TK ngân-hàng) `[benchmark — cần CEO xác minh khi đăng-ký]` — **KÊNH CHÍNH**. Chợ quốc-tế chỉ là **discovery** (KHÔNG kênh chính): **Etsy all-in thực ~13–16%+** (giao-dịch 6.5% + xử-lý ~3–4% + FX ~2.5% + $0.20 listing — KHÔNG phải 6.5%; sửa theo red-team 2026-07-07), Gumroad ~10% phẳng `[benchmark ngành — cần CEO xác minh]`. ⚠️ **Etsy KHÔNG hỗ-trợ seller đăng-ký từ VN** → mở shop phải lách pháp-nhân nước ngoài (vi-phạm TOS, nguy-cơ khóa acc) — cân-nhắc Gumroad/Payhip thay Etsy.
 - **Biên gộp/đơn:** **≈ giá bán (~95–100%)** trước ads — template số không COGS biến-đổi `[benchmark ngành]`.
 - **CAC-trần break-even:** = biên gộp/đơn − refund − thuế (đo khi có giá). **CAC thực** đo từ lô ads đầu `[cần CEO xác minh — chưa chạy ads]`.
 - **CAC-payback mục-tiêu (✅ mặc-định):** CM/đơn DƯƠNG ngay đơn đầu (payback ≤ 1 đơn) — CEO override nếu khác.

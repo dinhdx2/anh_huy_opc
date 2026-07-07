@@ -3,10 +3,15 @@
 > Ảnh chụp nhanh tình hình. Khởi tạo 2026-07-07 (onboard). ✅ = giả-định/đề-xuất · 🔹 = CEO bổ-sung số thật.
 
 ## Thời điểm cập nhật
-2026-07-07 (ONBOARD — vault mới, chưa chạy hội-đồng).
+2026-07-07 (DUYỆT DECISION REPORT — chốt hero & định-vị GĐ1).
 
 ## ▶️ Quyết-định đang chạy
-Chưa có. **Vault vừa onboard** — niche = **Template/asset số tiếng Việt** (CEO chọn qua nghiên-cứu 2026: biên cao + dễ làm cho người mới + chạy ads ra đơn được). Bước tiếp: **`/vn-run`** để hội-đồng chốt ngách template + hero + GTM; telos **chưa duyệt** (cổng G0 đang ĐÓNG — CEO cần duyệt `telos.md`).
+**Đã chốt hero (hội-đồng 6/6, CEO duyệt 2026-07-07)** — task `2026-07-07-1023-phan-tich-ngach-doi-thu`:
+- **Hero:** "Bộ Google Sheet **đối-soát & tính LÃI THẬT** đa-sàn TikTok Shop/Shopee" **149–179k**; định-vị = "biết lãi thật sau phí sàn/ads/COD" (né free-Excel). **Order-bump:** mẫu thuế khoán TT40 / tồn-kho (KHÔNG Canva).
+- **ICP:** nghiêng nhà-bán đang làm nghiêm-túc/đang scale. **Canva & Notion HOÃN** (upsell sau cổng PMF).
+- **CỔNG NO-GO CỨNG (chưa qua):** CEO **CHƯA khai vốn/trần-burn** (budget.md) + thời-gian/kỹ-năng founder (headcount.md) → **chưa được chi 1 đồng ads**. Đây là việc cần CEO làm TRƯỚC.
+- **Việc còn treo (từ report):** dựng bảng CAC break-even 3 kịch-bản (Tài-chính) · xác-minh nguồn số người-bán 2025 trước khi khóa ICP · rút gọn tên hero cho hook · ai làm content nếu mở kênh chợ.
+- **Bước tiếp:** **PHA 1** (`/vn-run` sinh cây việc ra-mắt hero) hoặc `/vn-execute` sau khi CEO khai vốn. Chi-tiết: `07-decision-report.md`.
 
 ## Giai đoạn (phát-hiện động — KHÔNG mặc-định)
 `stage: GĐ1` — vòng-đời 6 GĐ (luồng generic v3).
@@ -19,7 +24,8 @@ Chưa có. **Vault vừa onboard** — niche = **Template/asset số tiếng Vi�
 ## ✅ Checklist ra-mắt (paid-led — thứ-tự thực-thi, đề-xuất)
 | # | Việc | Ghi chú |
 |---|---|---|
-| 1 | Chốt **ngách template** + **hero** (1 chủ-đề, 1 nền) | qua `/vn-run` (hội-đồng) |
+| 1 | ✅ Chốt **ngách + hero** = Sheet đối-soát/lãi-thật đa-sàn 149–179k, order-bump TT40 | XONG (07-decision-report, CEO duyệt 2026-07-07) |
+| 1b | 🔹 **CEO khai vốn/trần-burn + thời-gian/kỹ-năng founder** (cổng NO-GO trước ads) | **CHƯA** — chặn cứng bước 5 |
 | 2 | Làm **hero template 99–199k** | qua **checklist bản-quyền** (no Canva Pro/raw-AI, font/ảnh có license) |
 | 3 | Dựng **landing + cổng thanh-toán VN** (SePay/PayOS/MoMo/ZaloPay) + **thu email/Zalo OA** | phễu + tài-sản sở-hữu |
 | 4 | **Privacy Policy/consent** (NĐ 13/2023) + giao-hàng có kiểm-soát (watermark/link cá-nhân-hóa) | trước khi thu data/bán |
