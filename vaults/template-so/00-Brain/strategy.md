@@ -12,7 +12,8 @@ Bán **template / asset số** tiếng Việt cho cá-nhân & DN nhỏ tại **V
 - (Mở rộng sau) **digital planner / printable**, bundle theo ngành, membership template định-kỳ.
 
 Đặc-thù template số: **biên gộp ~95–100%** (không COGS biến-đổi), chi-phí thực = **thiết-kế 1 lần + marketing + phí nền-tảng/thanh-toán**; làm 1 lần bán nhiều lần; **làm biến-thể nhanh bằng AI** (tạo 5 mẫu gần như không tốn thêm giờ) [benchmark ngành — cần CEO xác minh].
-🔹 CEO xác-nhận: **tên thương-hiệu**? **1 loại template ra mắt ĐẦU (hero)**? nền chủ-đạo (Google Sheet / Canva / Notion)?
+**Tên thương-hiệu (CEO chốt 2026-07-07):** **BộMẫu** — gợi "bộ template/kit trọn-gói" (hợp chiến-lược bán bundle/order-bump). ⚠️ *đề-xuất — chờ Legal tra Cục SHTT (nhóm 9 + 42) + domain trước khi đầu-tư vào brand (first-to-file).*
+🔹 CEO xác-nhận tiếp: **1 loại template ra mắt ĐẦU (hero)**? nền chủ-đạo (Google Sheet / Canva / Notion)?
 
 ## Khách hàng mục tiêu (ICP) — ✅ đề-xuất (chốt ở /vn-run)
 - **Thị trường:** Việt Nam (cá-nhân & DN siêu-nhỏ, VND).
