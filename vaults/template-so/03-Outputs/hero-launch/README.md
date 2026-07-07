@@ -5,7 +5,7 @@
 ## Bản-đồ deliverable
 | Thư mục | File | Vai trò | Trạng-thái |
 |---|---|---|---|
-| `sheet-hero/` | **`BoMau-DoiSoat-LaiThat-daSan.xlsx`** (SP THẬT — 6 tab, công-thức sống) + 5 CSV nguồn + `06-cong-thuc` | **HERO** — Sheet đối-soát & lãi-thật đa-sàn | ✅ mở lại sạch, công-thức khớp 100% |
+| `sheet-hero/` | **`BoMau-DoiSoat-LaiThat-daSan.xlsx`** (SP THẬT — 6 tab, **schema thật 18 cột**: trạng thái đơn/affiliate/voucher shop-sàn/hoàn hàng/ship) + **`HUONG-DAN-CHI-TIET-KHACH.md`** + `CACH-MO-FILE-XLSX.md`. *(CSV 01–05 = bản nháp cũ, tham khảo)* | **HERO** — Sheet đối-soát & lãi-thật đa-sàn | ✅ mở lại sạch, tính đúng mọi trạng thái (hủy/hoàn/1 phần) |
 | `order-bump/` | `tt40-tinh-thue-khoan.csv` · `ton-kho-don-gian.csv` · hướng-dẫn | **ORDER-BUMP** (+49–79k) — tính thuế khoán + tồn-kho | ✅ sửa nhất-quán hàng-hóa 1,5% |
 | `landing/` | `landing.html` + README deploy | **LANDING** bán hero (tự-chứa, tuân Luật QC) | ✅ 0 asset ngoài |
 | `compliance/` | `cong-ban-quyen-checklist.md` · `privacy-policy.md` | **CỔNG bản-quyền** (hero+order-bump PASS) + Privacy | ✅ (xem cờ luật ↓) |
