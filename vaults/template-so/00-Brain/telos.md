@@ -4,7 +4,7 @@
 > Đảo telos về sau → ghi `decisions-log.md` nhãn `altitude: telos`, đánh `superseded`.
 
 ```yaml
-telos: "Giúp người Việt (chủ shop, dân văn-phòng, freelancer, DN nhỏ) làm việc & bán hàng gọn hơn bằng bộ template/asset số tiếng Việt dùng-được-ngay, giá hợp-lý."
+telos: "Giúp người Việt (chủ shop, dân văn-phòng, freelancer, DN nhỏ) làm việc & bán hàng hiệu quả hơn bằng bộ template/asset số tiếng Việt dùng-được-ngay, giá hợp-lý."
 values:
   - "Dùng-được-ngay — template mở ra là chạy, không phải học lại từ đầu."
   - "Bản-địa-hóa thật — tiếng Việt, ví-dụ & cách làm hợp bối-cảnh VN (sàn/thuế/ngành)."
