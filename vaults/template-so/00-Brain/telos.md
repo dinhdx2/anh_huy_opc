@@ -15,7 +15,7 @@ boundaries:
   - "KHÔNG sao-chép template của người khác để bán lại."
   - "KHÔNG hứa 'giàu nhanh / chắc-chắn ra đơn'."
   - "KHÔNG spam / thu-thập dữ-liệu cá-nhân trái phép."
-approved_by: "[chờ CEO duyệt]"
+approved_by: "CEO (dinhdx2) — duyệt 2026-07-07 (cổng G0 MỞ)"
 proposed_by: AI
 ```
 
