@@ -2,7 +2,9 @@
 // Doi soat don qua SePay User API (nguon su that) — khong can luu DB.
 // Doc: https://developer.sepay.vn/vi/sepay-api/v1/api-giao-dich
 // v2: BO loc amount_in trong query (tranh lech bieu dien) -> lay 50 gd gan nhat, khop trong code.
-//     Them ?debug=1 de xem SePay thuc su tra gi (GO truoc khi chay ads).
+// v5 (pre-ads hardening 2026-07-08): nhanh ?debug=1 CONG SAU bi-mat env DEBUG_KEY.
+//     Prod KHONG dat DEBUG_KEY => debug tat hoan-toan (khong con ro danh-sach giao-dich cong-khai).
+//     Can chan-doan lai: dat env DEBUG_KEY=<chuoi bi-mat> roi goi ?debug=<chuoi do>.
 export default async function handler(req, res) {
   const rawCode = (req.query.code || "").toString();
   const code = rawCode.toUpperCase().replace(/[^A-Z0-9]/g, "");
@@ -24,8 +26,10 @@ export default async function handler(req, res) {
     const data = await r.json();
     const txns = Array.isArray(data.transactions) ? data.transactions : [];
 
-    // Che do debug: xem 10 gd gan nhat (content + so tien) de chan doan. GO param nay truoc khi ban that.
-    if (req.query.debug == "1") {
+    // Che do debug: CHI mo khi env DEBUG_KEY duoc dat VA query debug khop dung bi-mat do.
+    // Prod khong dat DEBUG_KEY => dieu-kien luon false => khong ro giao-dich ra ngoai.
+    const dbgKey = process.env.DEBUG_KEY;
+    if (dbgKey && req.query.debug === dbgKey) {
       return res.status(200).json({
         _debug: true,
         count: txns.length,

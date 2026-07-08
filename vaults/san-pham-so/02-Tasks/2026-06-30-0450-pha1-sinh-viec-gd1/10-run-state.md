@@ -3,11 +3,11 @@
 > Nguồn sự thật để **thực thi & resume** task `2026-06-30-0450-pha1-sinh-viec-gd1` (PHA 1 sinh-việc GĐ1 validate). Do skill `vn-executor` sinh & cập nhật. Mỗi dòng = **một bước nguyên-tử** (mã = `NVC.x`). Bất-biến: `lib/flow.js#validateRunState` (E1/E2) + **giám-sát tuân thủ** `lib/compliance.js` (E1/E4/E6/E7 · fail-closed) — sổ kiểm-toán `11-compliance.md`.
 
 ## TL;DR tiến độ
-- Task: `2026-06-30-0450-pha1-sinh-viec-gd1` · Cập nhật: `2026-07-06 (lượt 7 — LUỒNG BÁN LIVE & TEST PASS: mua→VietQR→SePay→tải OK)`
+- Task: `2026-06-30-0450-pha1-sinh-viec-gd1` · Cập nhật: `2026-07-08 (lượt 8 — PRE-ADS HARDENING: vá rò `?debug=1` trong repo; chờ CEO redeploy)`
 - Hoàn thành: **54/59 bước DONE (92%)** — **cỗ-máy bán tự-động đã chạy end-to-end** (landing `donthat.vercel.app` + SePay 0% + giao kit tự-động).
 - **Đang chặn (còn chờ CEO):** 3 BLOCKED-APPROVE (3.1b Zalo OA · 9.5c nộp SHTT · TEST chi ads) · 1 HUMAN (9.3b kế-toán thuế). BLOCKED-INFO = 0.
 - **1 TODO** (8.2b test pixel conversion — cần tài-khoản ads).
-- **🔒 Pre-ads hardening (chưa chạy ads nên chưa gấp):** gỡ `?debug=1` (order-status lộ danh-sách gd) · siết link tải `/dl/*.zip` (hiện là đường-dẫn tĩnh khó-đoán → nên chuyển link có token/hết-hạn trước khi scale).
+- **🔒 Pre-ads hardening:** ① gỡ rò `?debug=1` — **ĐÃ VÁ trong repo (lượt 8, 2026-07-08)**: nhánh debug cổng sau bí-mật env `DEBUG_KEY` (prod không đặt → tắt hẳn). ⚠️ **Cần CEO redeploy** để có hiệu-lực trên `donthat.vercel.app`. ② siết link tải `/dl/*.zip` (đường-dẫn tĩnh) → **CHỜ CEO duyệt** phương-án token/hết-hạn (đổi cấu-trúc deploy + redeploy phối-hợp).
 - Output deliverable tại `vaults/san-pham-so/03-Outputs/gd1-validate/` (`kit/` + landing + function + policy + sheet). SOP/spec/quy-trình → `02-Tasks/.../process/` (16 file dời từ Outputs, retro-clean 2026-07-06).
 - **Compliance: PHA2 PASS · 0 vi-phạm · cover 100%** (`npm run compliance` — sổ `11-compliance.md`). Retro-clean đợt E: dời 16 process-doc + sửa 7 F1 (evidence real).
 
@@ -91,6 +91,7 @@
 | 2026-07-05 (lượt 5) | 4.1b · 4.1c | AI build **gói deploy v2** (checkout VietQR 179k + `api/order-status` đối-soát SePay + `api/sepay-webhook`). Verify layout OK. Chờ CEO redeploy + rotate/env + đổi webhook URL |
 | 2026-07-06 (lượt 6) | 4.1c | Debug: SePay chỉ nhận gd có nội-dung **bắt đầu `SEVQR`** (yêu-cầu VietinBank). Đơn 179k thiếu SEVQR → không đồng-bộ. Fix: QR des = `SEVQR <mã đơn>` (v4). Cũng bỏ lọc `amount_in` + thêm `?debug=1` (order-status v2/v3) |
 | 2026-07-06 (lượt 7) | 4.1b·4.1c·4.1d·7.1b | ✅ **TEST PASS**: CEO redeploy v4 → mua → chuyển 179k (SEVQR) → SePay nhận → trang auto "Đã nhận thanh toán" → **tải kit OK**. Chốt 4 bước DONE |
+| 2026-07-08 (lượt 8) | pre-ads hardening | AI vá rò `?debug=1` trong `api/order-status.js` (v5: cổng sau bí-mật env `DEBUG_KEY`, prod tắt hẳn). **Chờ CEO: (a) redeploy Vercel để hiệu-lực; (b) quyết phương-án siết link tải `/dl/*.zip`.** |
 
 ## Ghi chú thực-thi
 - **"Live" cần tài-khoản ngoài:** các bước `4.1a/3.1a/8.2a/7.1a` được AI sản-xuất tới mức **build-ready artifact** (HTML/spec/cấu-hình) — phần **deploy lên domain/tài-khoản thật** phụ-thuộc cổng tiền (4.1b) + hosting/domain (NEED-INFO). Bước kiểm-thử `4.1c/7.1b/8.2b` chờ tài-khoản live.
